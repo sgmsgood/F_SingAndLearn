@@ -8,6 +8,7 @@ part of 'lyrics_line.dart';
 
 _LyricsLine _$LyricsLineFromJson(Map<String, dynamic> json) => _LyricsLine(
   lineLyrics: json['lineLyrics'] as String,
+  linePinyin: json['linePinyin'] as String? ?? "",
   translated: json['translated'] as String,
   words:
       (json['words'] as List<dynamic>?)
@@ -24,6 +25,7 @@ _LyricsLine _$LyricsLineFromJson(Map<String, dynamic> json) => _LyricsLine(
 Map<String, dynamic> _$LyricsLineToJson(_LyricsLine instance) =>
     <String, dynamic>{
       'lineLyrics': instance.lineLyrics,
+      'linePinyin': instance.linePinyin,
       'translated': instance.translated,
       'words': instance.words,
       'patterns': instance.patterns,

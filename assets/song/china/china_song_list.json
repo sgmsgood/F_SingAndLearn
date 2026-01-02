@@ -14,6 +14,7 @@
         "lines": [
           {
             "lineLyrics": "措手不及",
+            "linePinyin": "cuò shǒu bù jí",
             "translated": "미처 손쓸 틈도 없이.",
             "words": [
               {
@@ -29,6 +30,7 @@
 
           {
             "lineLyrics": "遇見你我開始變得不太聰明",
+            "linePinyin": "yùjiàn nǐ, wǒ kāishǐ biàn de bú tài cōngmíng",
             "translated": "너를 만난 후 나는 점점 똑똑하지 못해졌어.",
             "words": [
               { "id": "w_yujian", "text": "遇見", "pinyin": "yùjiàn", "meaning": "만나다", "span": { "start": 0, "end": 2 } },
@@ -41,6 +43,7 @@
 
           {
             "lineLyrics": "心跳加速有時候呼吸也暫停",
+            "linePinyin": "xīntiào jiāsù, yǒu shíhou hūxī yě zàntíng",
             "translated": "심장은 빨라지고 가끔은 숨조차 멈춰.",
             "words": [
               { "id": "w_xintiao", "text": "心跳", "pinyin": "xīntiào", "meaning": "심장 박동", "span": { "start": 0, "end": 0 } },
@@ -53,6 +56,7 @@
 
           {
             "lineLyrics": "身體無法控制向你靠近",
+            "linePinyin": "shēntǐ wúfǎ kòngzhì xiàng nǐ kàojìn",
             "translated": "몸이 말을 안 듣고 너에게 다가가.",
             "words": [
               { "id": "w_shenti", "text": "身體", "pinyin": "shēntǐ", "meaning": "몸", "span": { "start": 0, "end": 0 } },
@@ -65,6 +69,7 @@
 
           {
             "lineLyrics": "步步為營",
+            "linePinyin": "bùbùwéiyíng",
             "translated": "한 걸음 한 걸음 조심스럽게.",
             "words": [
               { "id": "w_bubuweiying", "text": "步步為營", "pinyin": "bùbùwéiyíng", "meaning": "매우 신중하다", "span": { "start": 0, "end": 4 } }
@@ -74,6 +79,7 @@
 
           {
             "lineLyrics": "人物關係走向不可控的劇情",
+            "linePinyin": "",
             "translated": "우리 관계는 통제할 수 없는 전개로 흘러가.",
             "words": [
               { "id": "w_renwuguanxi", "text": "人物關係", "pinyin": "rénwù guānxì", "meaning": "인물 관계", "span": { "start": 0, "end": 0 } },
@@ -86,6 +92,7 @@
 
           {
             "lineLyrics": "窗外飛過的宣告戀愛的蜻蜓",
+            "linePinyin": "chuāngwài fēiguò de xuāngào liàn’ài de qīngtíng",
             "translated": "창밖을 스쳐 가며 사랑을 알리는 잠자리.",
             "words": [
               { "id": "w_chuangwai", "text": "窗外", "pinyin": "chuāngwài", "meaning": "창밖", "span": { "start": 0, "end": 0 } },
@@ -99,6 +106,7 @@
 
           {
             "lineLyrics": "想你 我的心事變得透明",
+            "linePinyin": "xiǎng nǐ wǒ de xīnshì biàn de tòumíng",
             "translated": "너를 생각하면 내 마음은 투명해져.",
             "words": [
               { "id": "w_xiangni", "text": "想你", "pinyin": "xiǎng nǐ", "meaning": "너를 생각하다", "span": { "start": 0, "end": 0 } },
@@ -110,6 +118,7 @@
 
           {
             "lineLyrics": "一意孤行 汲汲營營 寸步難行",
+            "linePinyin": "yīyìgūxíng jíjíyíngyíng cùnbùnánxíng",
             "translated": "고집만 부리다 보니 한 발짝도 나아가기 힘들어.",
             "words": [
               { "id": "w_yiyiguxing", "text": "一意孤行", "pinyin": "yīyìgūxíng", "meaning": "고집대로 밀고 가다", "span": { "start": 0, "end": 0 } },
@@ -120,6 +129,7 @@
 
           {
             "lineLyrics": "慢慢累積 拼湊不完整的旋律",
+            "linePinyin": "mànmàn lěijī pīncòu bù wánzhěng de xuánlǜ",
             "translated": "조금씩 쌓아가며 완전하지 않은 멜로디를 맞춰.",
             "words": [
               { "id": "w_manman", "text": "慢慢", "pinyin": "mànman", "meaning": "천천히", "span": { "start": 0, "end": 0 } },
@@ -132,6 +142,7 @@
 
           {
             "lineLyrics": "我一貫的小心翼翼 現在卻想要告訴你",
+            "linePinyin": "wǒ yīguàn de xiǎoxīnyìyì xiànzài què xiǎngyào gàosù nǐ",
             "translated": "늘 조심하던 내가 이제는 너에게 말하고 싶어.",
             "words": [
               { "id": "w_yiguan", "text": "一貫", "pinyin": "yíguàn", "meaning": "줄곧", "span": { "start": 0, "end": 0 } },
@@ -143,6 +154,7 @@
 
           {
             "lineLyrics": "好喜歡你 像春天的花朵盛開在夏夜裡",
+            "linePinyin": "hǎo xǐhuān nǐ xiàng chūntiān de huāduǒ shèngkāi zài xiàyè lǐ",
             "translated": "정말 좋아해, 봄의 꽃이 여름밤에 피어난 것처럼.",
             "words": [
               { "id": "w_haoxihuan", "text": "好喜歡", "pinyin": "hǎo xǐhuan", "meaning": "정말 좋아하다", "span": { "start": 0, "end": 0 } },
@@ -168,6 +180,7 @@
 
           {
             "lineLyrics": "如果我能給你短暫的開心",
+            "linePinyin": "rúguǒ wǒ néng gěi nǐ duǎnzàn de kāixīn\n",
             "translated": "만약 내가 너에게 잠깐의 기쁨이라도 줄 수 있다면.",
             "words": [
               { "id": "w_ruguo", "text": "如果", "pinyin": "rúguǒ", "meaning": "만약", "span": { "start": 0, "end": 0 } },
@@ -190,6 +203,7 @@
 
           {
             "lineLyrics": "像微風吹過雨後泥土的香氣",
+            "linePinyin": "xiàng wēifēng chuīguò yǔhòu nítǔ de xiāngqì",
             "translated": "비 온 뒤 흙을 스치는 산들바람의 향기처럼.",
             "words": [
               { "id": "w_weifeng", "text": "微風", "pinyin": "wēifēng", "meaning": "산들바람", "span": { "start": 0, "end": 0 } },
@@ -217,6 +231,7 @@
 
           {
             "lineLyrics": "像迷途的旅人到達了目的地",
+            "linePinyin": "",
             "translated": "길을 잃었던 여행자가 목적지에 도착한 것처럼.",
             "words": [
               { "id": "w_mitu", "text": "迷途", "pinyin": "mítú", "meaning": "길을 잃다", "span": { "start": 0, "end": 0 } },
@@ -229,6 +244,7 @@
 
           {
             "lineLyrics": "像飛舞蝴蝶被絢爛色彩吸引",
+            "linePinYin": "",
             "translated": "화려한 색에 이끌린 나비가 날아드는 것처럼.",
             "words": [
               { "id": "w_feiwu", "text": "飛舞", "pinyin": "fēiwǔ", "meaning": "날아다니다", "span": { "start": 0, "end": 0 } },
@@ -241,6 +257,7 @@
 
           {
             "lineLyrics": "像流傳許久神秘的愛情咒語",
+            "linePinyin": "",
             "translated": "오래도록 전해 내려온 신비한 사랑의 주문처럼.",
             "words": [
               { "id": "w_liuchuan", "text": "流傳", "pinyin": "liúchuán", "meaning": "전해지다", "span": { "start": 0, "end": 0 } },
@@ -252,6 +269,7 @@
 
           {
             "lineLyrics": "像喧囂的午後突然變的安靜",
+            "linePinyin": "",
             "translated": "시끄럽던 오후가 갑자기 고요해진 것처럼.",
             "words": [
               { "id": "w_xuanxiao", "text": "喧囂", "pinyin": "xuānxiāo", "meaning": "소란스럽다", "span": { "start": 0, "end": 0 } },
@@ -264,6 +282,7 @@
 
           {
             "lineLyrics": "像眼淚落入海底逃離了孤寂",
+            "linePinyin": "",
             "translated": "눈물이 바다 밑으로 가라앉아 외로움을 벗어나는 것처럼.",
             "words": [
               { "id": "w_yanlei", "text": "眼淚", "pinyin": "yǎnlèi", "meaning": "눈물", "span": { "start": 0, "end": 0 } },
@@ -276,6 +295,7 @@
 
           {
             "lineLyrics": "春夏秋冬四季 不停隨著時間在變化",
+            "linePinyin": "",
             "translated": "사계절은 시간에 따라 끊임없이 변해가.",
             "words": [
               { "id": "w_siji", "text": "四季", "pinyin": "sìjì", "meaning": "사계절", "span": { "start": 0, "end": 0 } },
@@ -287,6 +307,7 @@
 
           {
             "lineLyrics": "你離開了家 在他鄉會有人照顧你嗎？",
+            "linePinyin": "",
             "translated": "집을 떠난 너, 타지에서는 누가 널 챙겨줄까?",
             "words": [
               { "id": "w_likai", "text": "離開", "pinyin": "líkāi", "meaning": "떠나다", "span": { "start": 0, "end": 0 } },
@@ -298,6 +319,7 @@
 
           {
             "lineLyrics": "能不能大聲告訴你？",
+            "linePinyin": "",
             "translated": "이번엔 크게 말해도 될까?",
             "words": [
               { "id": "w_nengbuneng", "text": "能不能", "pinyin": "néng bù néng", "meaning": "~해도 될까", "span": { "start": 0, "end": 3 } },
@@ -324,6 +346,7 @@
 
           {
             "lineLyrics": "那一句「我愛你」在晴天的風裡",
+            "linePinyin": "",
             "translated": "그 한마디 ‘사랑해’는 맑은 날의 바람 속에 있고.",
             "words": [
               { "id": "w_nayiju", "text": "那一句", "pinyin": "nà yí jù", "meaning": "그 한마디", "span": { "start": 0, "end": 0 } },
@@ -336,6 +359,7 @@
 
           {
             "lineLyrics": "而每一顆雨滴 都是我在想你",
+            "linePinyin": "",
             "translated": "떨어지는 빗방울 하나하나가 전부 너를 생각하는 마음이야.",
             "words": [
               { "id": "w_meiyi", "text": "每一", "pinyin": "měi yī", "meaning": "하나하나 모두", "span": { "start": 0, "end": 0 } },

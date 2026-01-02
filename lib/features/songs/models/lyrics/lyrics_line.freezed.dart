@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$LyricsLine {
 
- String get lineLyrics; String get translated; List<LyricsWord> get words; List<GrammarPattern> get patterns;
+ String get lineLyrics; String get linePinyin; String get translated; List<LyricsWord> get words; List<GrammarPattern> get patterns;
 /// Create a copy of LyricsLine
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $LyricsLineCopyWith<LyricsLine> get copyWith => _$LyricsLineCopyWithImpl<LyricsL
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is LyricsLine&&(identical(other.lineLyrics, lineLyrics) || other.lineLyrics == lineLyrics)&&(identical(other.translated, translated) || other.translated == translated)&&const DeepCollectionEquality().equals(other.words, words)&&const DeepCollectionEquality().equals(other.patterns, patterns));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is LyricsLine&&(identical(other.lineLyrics, lineLyrics) || other.lineLyrics == lineLyrics)&&(identical(other.linePinyin, linePinyin) || other.linePinyin == linePinyin)&&(identical(other.translated, translated) || other.translated == translated)&&const DeepCollectionEquality().equals(other.words, words)&&const DeepCollectionEquality().equals(other.patterns, patterns));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,lineLyrics,translated,const DeepCollectionEquality().hash(words),const DeepCollectionEquality().hash(patterns));
+int get hashCode => Object.hash(runtimeType,lineLyrics,linePinyin,translated,const DeepCollectionEquality().hash(words),const DeepCollectionEquality().hash(patterns));
 
 @override
 String toString() {
-  return 'LyricsLine(lineLyrics: $lineLyrics, translated: $translated, words: $words, patterns: $patterns)';
+  return 'LyricsLine(lineLyrics: $lineLyrics, linePinyin: $linePinyin, translated: $translated, words: $words, patterns: $patterns)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $LyricsLineCopyWith<$Res>  {
   factory $LyricsLineCopyWith(LyricsLine value, $Res Function(LyricsLine) _then) = _$LyricsLineCopyWithImpl;
 @useResult
 $Res call({
- String lineLyrics, String translated, List<LyricsWord> words, List<GrammarPattern> patterns
+ String lineLyrics, String linePinyin, String translated, List<LyricsWord> words, List<GrammarPattern> patterns
 });
 
 
@@ -65,9 +65,10 @@ class _$LyricsLineCopyWithImpl<$Res>
 
 /// Create a copy of LyricsLine
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? lineLyrics = null,Object? translated = null,Object? words = null,Object? patterns = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? lineLyrics = null,Object? linePinyin = null,Object? translated = null,Object? words = null,Object? patterns = null,}) {
   return _then(_self.copyWith(
 lineLyrics: null == lineLyrics ? _self.lineLyrics : lineLyrics // ignore: cast_nullable_to_non_nullable
+as String,linePinyin: null == linePinyin ? _self.linePinyin : linePinyin // ignore: cast_nullable_to_non_nullable
 as String,translated: null == translated ? _self.translated : translated // ignore: cast_nullable_to_non_nullable
 as String,words: null == words ? _self.words : words // ignore: cast_nullable_to_non_nullable
 as List<LyricsWord>,patterns: null == patterns ? _self.patterns : patterns // ignore: cast_nullable_to_non_nullable
@@ -156,10 +157,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String lineLyrics,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String lineLyrics,  String linePinyin,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _LyricsLine() when $default != null:
-return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);case _:
+return $default(_that.lineLyrics,_that.linePinyin,_that.translated,_that.words,_that.patterns);case _:
   return orElse();
 
 }
@@ -177,10 +178,10 @@ return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);ca
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String lineLyrics,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String lineLyrics,  String linePinyin,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)  $default,) {final _that = this;
 switch (_that) {
 case _LyricsLine():
-return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);case _:
+return $default(_that.lineLyrics,_that.linePinyin,_that.translated,_that.words,_that.patterns);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -197,10 +198,10 @@ return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);ca
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String lineLyrics,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String lineLyrics,  String linePinyin,  String translated,  List<LyricsWord> words,  List<GrammarPattern> patterns)?  $default,) {final _that = this;
 switch (_that) {
 case _LyricsLine() when $default != null:
-return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);case _:
+return $default(_that.lineLyrics,_that.linePinyin,_that.translated,_that.words,_that.patterns);case _:
   return null;
 
 }
@@ -212,10 +213,11 @@ return $default(_that.lineLyrics,_that.translated,_that.words,_that.patterns);ca
 @JsonSerializable()
 
 class _LyricsLine implements LyricsLine {
-  const _LyricsLine({required this.lineLyrics, required this.translated, final  List<LyricsWord> words = const <LyricsWord>[], final  List<GrammarPattern> patterns = const <GrammarPattern>[]}): _words = words,_patterns = patterns;
+  const _LyricsLine({required this.lineLyrics, this.linePinyin = "", required this.translated, final  List<LyricsWord> words = const <LyricsWord>[], final  List<GrammarPattern> patterns = const <GrammarPattern>[]}): _words = words,_patterns = patterns;
   factory _LyricsLine.fromJson(Map<String, dynamic> json) => _$LyricsLineFromJson(json);
 
 @override final  String lineLyrics;
+@override@JsonKey() final  String linePinyin;
 @override final  String translated;
  final  List<LyricsWord> _words;
 @override@JsonKey() List<LyricsWord> get words {
@@ -245,16 +247,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LyricsLine&&(identical(other.lineLyrics, lineLyrics) || other.lineLyrics == lineLyrics)&&(identical(other.translated, translated) || other.translated == translated)&&const DeepCollectionEquality().equals(other._words, _words)&&const DeepCollectionEquality().equals(other._patterns, _patterns));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LyricsLine&&(identical(other.lineLyrics, lineLyrics) || other.lineLyrics == lineLyrics)&&(identical(other.linePinyin, linePinyin) || other.linePinyin == linePinyin)&&(identical(other.translated, translated) || other.translated == translated)&&const DeepCollectionEquality().equals(other._words, _words)&&const DeepCollectionEquality().equals(other._patterns, _patterns));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,lineLyrics,translated,const DeepCollectionEquality().hash(_words),const DeepCollectionEquality().hash(_patterns));
+int get hashCode => Object.hash(runtimeType,lineLyrics,linePinyin,translated,const DeepCollectionEquality().hash(_words),const DeepCollectionEquality().hash(_patterns));
 
 @override
 String toString() {
-  return 'LyricsLine(lineLyrics: $lineLyrics, translated: $translated, words: $words, patterns: $patterns)';
+  return 'LyricsLine(lineLyrics: $lineLyrics, linePinyin: $linePinyin, translated: $translated, words: $words, patterns: $patterns)';
 }
 
 
@@ -265,7 +267,7 @@ abstract mixin class _$LyricsLineCopyWith<$Res> implements $LyricsLineCopyWith<$
   factory _$LyricsLineCopyWith(_LyricsLine value, $Res Function(_LyricsLine) _then) = __$LyricsLineCopyWithImpl;
 @override @useResult
 $Res call({
- String lineLyrics, String translated, List<LyricsWord> words, List<GrammarPattern> patterns
+ String lineLyrics, String linePinyin, String translated, List<LyricsWord> words, List<GrammarPattern> patterns
 });
 
 
@@ -282,9 +284,10 @@ class __$LyricsLineCopyWithImpl<$Res>
 
 /// Create a copy of LyricsLine
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? lineLyrics = null,Object? translated = null,Object? words = null,Object? patterns = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? lineLyrics = null,Object? linePinyin = null,Object? translated = null,Object? words = null,Object? patterns = null,}) {
   return _then(_LyricsLine(
 lineLyrics: null == lineLyrics ? _self.lineLyrics : lineLyrics // ignore: cast_nullable_to_non_nullable
+as String,linePinyin: null == linePinyin ? _self.linePinyin : linePinyin // ignore: cast_nullable_to_non_nullable
 as String,translated: null == translated ? _self.translated : translated // ignore: cast_nullable_to_non_nullable
 as String,words: null == words ? _self._words : words // ignore: cast_nullable_to_non_nullable
 as List<LyricsWord>,patterns: null == patterns ? _self._patterns : patterns // ignore: cast_nullable_to_non_nullable

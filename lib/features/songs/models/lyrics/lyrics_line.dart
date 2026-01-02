@@ -9,6 +9,7 @@ part 'lyrics_line.g.dart';
 abstract class LyricsLine with _$LyricsLine {
   const factory LyricsLine({
     required String lineLyrics,
+    @Default("") String linePinyin,
     required String translated,
     @Default(<LyricsWord>[]) List<LyricsWord> words,
     @Default(<GrammarPattern>[]) List<GrammarPattern> patterns,

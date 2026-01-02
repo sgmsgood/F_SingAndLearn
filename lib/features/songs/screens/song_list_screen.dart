@@ -23,7 +23,6 @@ class SongListScreen extends ConsumerWidget {
             subtitle: Text(song.name),
             trailing: const Icon(Icons.chevron_right),
             onTap: () {
-              print("clicked: ${song}");
               context.pushNamed(
                 AppRoute.lyrics.name,
                 extra: song,

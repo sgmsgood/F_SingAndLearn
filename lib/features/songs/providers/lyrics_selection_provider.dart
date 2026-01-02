@@ -1,8 +1,13 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod/legacy.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-class LyricsSelectionNotifier extends StateNotifier<Set<String>> {
-  LyricsSelectionNotifier() : super({});
+part 'lyrics_selection_provider.g.dart';
+
+@riverpod
+class LyricsSelection extends _$LyricsSelection {
+  @override
+  Set<String> build() {
+    return {};
+  }
 
   void toggle(String word) {
     if (state.contains(word)) {
@@ -12,13 +17,19 @@ class LyricsSelectionNotifier extends StateNotifier<Set<String>> {
     }
   }
 
-  bool isSelected(String word) => state.contains(word);
-
-  void reset() => state = {};
+  void reset() {
+    state = {};
+  }
 }
 
-final lyricsSelectionProvider =
-StateNotifierProvider.autoDispose<LyricsSelectionNotifier, Set<String>>(
-        (ref) => LyricsSelectionNotifier());
+@riverpod
+class SelectedToken extends _$SelectedToken {
+  @override
+  String? build() {
+    return null;
+  }
 
-final selectedTokenProvider = StateProvider<String?>((ref) => null);
+  void set(String? id) {
+    state = id;
+  }
+}
