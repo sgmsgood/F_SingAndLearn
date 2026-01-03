@@ -1,22 +1,24 @@
-import 'dart:convert';
-
-import 'package:f_sing_and_learn/features/songs/models/song_bundle.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 
-final songRepositoryProvider = Provider(
-      (ref) => SongRepository(rootBundle),
-);
+part 'songs_providers.g.dart';
 
-final songBundleProvider = FutureProvider<SongBundle>((ref) async {
-  return ref.watch(songRepositoryProvider).fetchSongs();
-});
+@riverpod
+class SongRepositoryNotifier extends _$SongRepositoryNotifier {
+  @override
+  SongRepository build() {
+    return SongRepository(Supabase.instance.client);
+  }
+}
 
-final songListProvider = FutureProvider((ref) async {
-  final repo = ref.watch(songRepositoryProvider);
-  final response = await repo.fetchSongs();
-  return response.list; // List<Song>
-});
+@riverpod
+class FetchSongList extends _$FetchSongList {
+  @override
+  Future<List<Song>> build() async {
+    // 클래스형에서는 ref.watch 대신 그냥 ref.watch를 씁니다 (this.ref)
+    final repository = ref.watch(songRepositoryProvider);
+    return repository.fetchSongs();
+  }
+}

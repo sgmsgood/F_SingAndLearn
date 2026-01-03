@@ -1,5 +1,6 @@
 import 'package:f_sing_and_learn/features/songs/models/lyrics/grammar_pattern.dart';
 import 'package:f_sing_and_learn/features/songs/models/lyrics/lyrics_line.dart';
+import 'package:f_sing_and_learn/features/songs/providers/lyric_lines_provider.dart';
 import 'package:f_sing_and_learn/features/songs/screens/widgets/lyrics_rich_text.dart';
 import 'package:f_sing_and_learn/shared/utils/fill_span.dart';
 import 'package:flutter/material.dart';
@@ -32,6 +33,7 @@ class LyricsScreen extends ConsumerStatefulWidget {
 class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
   @override
   void didChangeDependencies() {
+    print("@!!-->> song: ${widget.song}");
     super.didChangeDependencies();
     final route = ModalRoute.of(context);
     if (route is PageRoute) {
@@ -48,54 +50,63 @@ class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
   @override
   Widget build(BuildContext context) {
     final selectedId = ref.watch(selectedTokenProvider);
-    final lyrics = widget.song.lyrics;
+    final lyricsAsync = ref.watch(lyricLinesProvider(widget.song.id));
+    // final lyrics = widget.song.lyrics;
 
     return Scaffold(
       appBar: AppBar(title: Text(widget.song.title)),
-      body: ListView.builder(
-        padding: const EdgeInsets.all(16),
-        itemCount: lyrics.lines.length,
-        itemBuilder: (_, i) {
-          final line = lyrics.lines[i];
+      body: lyricsAsync.when(
+        data: (lines) {
+          return ListView.builder(
+            padding: const EdgeInsets.all(16),
+            itemCount: lines.length,
+            itemBuilder: (_, i) {
+              final line = lines[i];
 
-          final wordClickable = makeClickableSpans(
-            line: line.lineLyrics,
-            words: line.words,
-          );
+              final wordClickable = makeClickableSpans(
+                line: line.lineLyrics,
+                words: line.words,
+              );
 
-          final patternClickable = makePatternClickableSpans(
-            patterns: line.patterns,
-          );
+              final patternClickable = makePatternClickableSpans(
+                patterns: line.patterns,
+              );
 
-          final clickable = [...wordClickable, ...patternClickable];
+              final clickable = [...wordClickable, ...patternClickable];
 
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 14),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                buildRichLine(
-                  text: line.lineLyrics,
-                  clickableSpans: clickable,
-                  selectedId: selectedId,
-                  onTap: (id) {
-                    ref.read(lyricsControllerProvider.notifier).onTokenTapped(context, id, line);
-                  },
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    buildRichLine(
+                      text: line.lineLyrics,
+                      clickableSpans: clickable,
+                      selectedId: selectedId,
+                      onTap: (id) {
+                        ref
+                            .read(lyricsControllerProvider.notifier)
+                            .onTokenTapped(context, id, line);
+                      },
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      line.linePinyin,
+                      style: const TextStyle(fontSize: 13, color: Colors.grey),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      line.translated,
+                      style: const TextStyle(fontSize: 13, color: Colors.grey),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 6),
-                Text(
-                  line.linePinyin,
-                  style: const TextStyle(fontSize: 13, color: Colors.grey),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  line.translated,
-                  style: const TextStyle(fontSize: 13, color: Colors.grey),
-                ),
-              ],
-            ),
+              );
+            },
           );
         },
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (err, stack) => Text('Error: $err'),
       ),
     );
   }

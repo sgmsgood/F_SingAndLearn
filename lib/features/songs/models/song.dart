@@ -10,8 +10,8 @@ abstract class Song with _$Song {
   const factory Song({
     required String id,
     required String title,
-    @Default('') String pinyinTitle,
-    required String name,
+    @JsonKey(name: 'pinyin_title') @Default('') String pinyinTitle,
+    required String singer,
 
     // JSON 키가 nickname 이니까 name 지정
     @JsonKey(name: 'nickname') @Default('') String nickname,

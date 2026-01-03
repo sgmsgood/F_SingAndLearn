@@ -52,6 +52,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   riverpod_annotation: ^4.0.0
   riverpod_generator: ^4.0.0+1
+  supabase: ^2.10.2
 
 dev_dependencies:
   flutter_test:

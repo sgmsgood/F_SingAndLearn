@@ -11,8 +11,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Supabase.initialize(
-    url: 'YOUR_SUPABASE_PROJECT_URL',
-    anonKey: 'YOUR_SUPABASE_ANON_KEY',
+    url: 'https://wgawogfdkzpqrwauoqwk.supabase.co',
+    anonKey: 'sb_publishable_xILU46K1NOVsdXCGg_TK2Q_ZTgzwtHf',
   );
 
   runApp(const ProviderScope(child: SingAndLearnApp()));
@@ -21,9 +21,12 @@ void main() async {
 class SingAndLearnApp extends ConsumerWidget {
   const SingAndLearnApp({super.key});
 
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final authState = Supabase.instance.client.auth.onAuthStateChange;
+
+
 
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,

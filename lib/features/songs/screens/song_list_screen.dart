@@ -10,7 +10,7 @@ class SongListScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final songsAsync = ref.watch(songListProvider);
+    final songsAsync = ref.watch(fetchSongListProvider);
 
     return songsAsync.when(
       data: (songs) => ListView.builder(
@@ -20,7 +20,7 @@ class SongListScreen extends ConsumerWidget {
           return ListTile(
             leading: const Icon(Icons.music_note),
             title: Text(song.title),
-            subtitle: Text(song.name),
+            subtitle: Text(song.singer),
             trailing: const Icon(Icons.chevron_right),
             onTap: () {
               context.pushNamed(

@@ -1,17 +1,19 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:supabase/supabase.dart';
+import '../models/song.dart';
 import '../models/song_bundle.dart';
 
 
 class SongRepository {
-  const SongRepository(this.assetBundle);
-  final AssetBundle assetBundle;
+  final SupabaseClient _supabase;
 
-  Future<SongBundle> fetchSongs() async {
-    final jsonStr = await assetBundle.loadString('assets/song/china/china_song_list.json');
-    final jsonMap = jsonDecode(jsonStr);
+  SongRepository(this._supabase);
 
-    return SongBundle.fromJson(jsonMap);
+  Future<List<Song>> fetchSongs() async {
+    final response = await _supabase.from('songs').select();
+    print("@!!-->> response: ${response}");
+    return response.map((e) => Song.fromJson(e)).toList();
   }
 }

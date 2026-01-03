@@ -9,8 +9,8 @@ part of 'song.dart';
 _Song _$SongFromJson(Map<String, dynamic> json) => _Song(
   id: json['id'] as String,
   title: json['title'] as String,
-  pinyinTitle: json['pinyinTitle'] as String? ?? '',
-  name: json['name'] as String,
+  pinyinTitle: json['pinyin_title'] as String? ?? '',
+  singer: json['singer'] as String,
   nickname: json['nickname'] as String? ?? '',
   youtubeLink: json['youtubeLink'] as String? ?? '',
   isFavorite: json['isFavorite'] as bool? ?? false,
@@ -22,8 +22,8 @@ _Song _$SongFromJson(Map<String, dynamic> json) => _Song(
 Map<String, dynamic> _$SongToJson(_Song instance) => <String, dynamic>{
   'id': instance.id,
   'title': instance.title,
-  'pinyinTitle': instance.pinyinTitle,
-  'name': instance.name,
+  'pinyin_title': instance.pinyinTitle,
+  'singer': instance.singer,
   'nickname': instance.nickname,
   'youtubeLink': instance.youtubeLink,
   'isFavorite': instance.isFavorite,

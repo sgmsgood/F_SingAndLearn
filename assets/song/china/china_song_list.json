@@ -5,13 +5,11 @@
       "id": "song_xqt_xyt",
       "title": "像晴天像雨天",
       "pinyinTitle": "xiangqingtianxiangyutian",
-      "name": "汪苏泷",
+      "singer": "汪苏泷",
       "nickname": "Silence Wang",
       "youtubeLink": "https://www.youtube.com/watch?v=GqiFhZvIaxI",
       "isFavorite": false,
-      "lyrics": {
-        "chinese": "措手不及",
-        "lines": [
+      "lyrics": [
           {
             "lineLyrics": "措手不及",
             "linePinyin": "cuò shǒu bù jí",
@@ -180,7 +178,7 @@
 
           {
             "lineLyrics": "如果我能給你短暫的開心",
-            "linePinyin": "rúguǒ wǒ néng gěi nǐ duǎnzàn de kāixīn\n",
+            "linePinyin": "rúguǒ wǒ néng gěi nǐ duǎnzàn de kāixīn",
             "translated": "만약 내가 너에게 잠깐의 기쁨이라도 줄 수 있다면.",
             "words": [
               { "id": "w_ruguo", "text": "如果", "pinyin": "rúguǒ", "meaning": "만약", "span": { "start": 0, "end": 0 } },
@@ -369,8 +367,7 @@
             ],
             "patterns": []
           }
-        ]
-      }
+      ]
     }
   ]
 }
