@@ -7,6 +7,7 @@ List<ClickableSpan> makeClickableSpans({
   required String line,
   required List<LyricsWord> words,
 }) {
+  print("line:: $line / words: $words");
   var cursor = 0;
   final res = <ClickableSpan>[];
 

@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$LyricsWord {
 
- String get id; String get text; String get pinyin; String get meaning; Span get span; bool get isImportant; bool get isSaved;
+ String get id; String get text; String get type; String get pinyin; String get meaning; Span? get span;
 /// Create a copy of LyricsWord
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $LyricsWordCopyWith<LyricsWord> get copyWith => _$LyricsWordCopyWithImpl<LyricsW
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is LyricsWord&&(identical(other.id, id) || other.id == id)&&(identical(other.text, text) || other.text == text)&&(identical(other.pinyin, pinyin) || other.pinyin == pinyin)&&(identical(other.meaning, meaning) || other.meaning == meaning)&&(identical(other.span, span) || other.span == span)&&(identical(other.isImportant, isImportant) || other.isImportant == isImportant)&&(identical(other.isSaved, isSaved) || other.isSaved == isSaved));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is LyricsWord&&(identical(other.id, id) || other.id == id)&&(identical(other.text, text) || other.text == text)&&(identical(other.type, type) || other.type == type)&&(identical(other.pinyin, pinyin) || other.pinyin == pinyin)&&(identical(other.meaning, meaning) || other.meaning == meaning)&&(identical(other.span, span) || other.span == span));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,text,pinyin,meaning,span,isImportant,isSaved);
+int get hashCode => Object.hash(runtimeType,id,text,type,pinyin,meaning,span);
 
 @override
 String toString() {
-  return 'LyricsWord(id: $id, text: $text, pinyin: $pinyin, meaning: $meaning, span: $span, isImportant: $isImportant, isSaved: $isSaved)';
+  return 'LyricsWord(id: $id, text: $text, type: $type, pinyin: $pinyin, meaning: $meaning, span: $span)';
 }
 
 
@@ -48,11 +48,11 @@ abstract mixin class $LyricsWordCopyWith<$Res>  {
   factory $LyricsWordCopyWith(LyricsWord value, $Res Function(LyricsWord) _then) = _$LyricsWordCopyWithImpl;
 @useResult
 $Res call({
- String id, String text, String pinyin, String meaning, Span span, bool isImportant, bool isSaved
+ String id, String text, String type, String pinyin, String meaning, Span? span
 });
 
 
-$SpanCopyWith<$Res> get span;
+$SpanCopyWith<$Res>? get span;
 
 }
 /// @nodoc
@@ -65,25 +65,27 @@ class _$LyricsWordCopyWithImpl<$Res>
 
 /// Create a copy of LyricsWord
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? text = null,Object? pinyin = null,Object? meaning = null,Object? span = null,Object? isImportant = null,Object? isSaved = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? text = null,Object? type = null,Object? pinyin = null,Object? meaning = null,Object? span = freezed,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,text: null == text ? _self.text : text // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
 as String,pinyin: null == pinyin ? _self.pinyin : pinyin // ignore: cast_nullable_to_non_nullable
 as String,meaning: null == meaning ? _self.meaning : meaning // ignore: cast_nullable_to_non_nullable
-as String,span: null == span ? _self.span : span // ignore: cast_nullable_to_non_nullable
-as Span,isImportant: null == isImportant ? _self.isImportant : isImportant // ignore: cast_nullable_to_non_nullable
-as bool,isSaved: null == isSaved ? _self.isSaved : isSaved // ignore: cast_nullable_to_non_nullable
-as bool,
+as String,span: freezed == span ? _self.span : span // ignore: cast_nullable_to_non_nullable
+as Span?,
   ));
 }
 /// Create a copy of LyricsWord
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
-$SpanCopyWith<$Res> get span {
-  
-  return $SpanCopyWith<$Res>(_self.span, (value) {
+$SpanCopyWith<$Res>? get span {
+    if (_self.span == null) {
+    return null;
+  }
+
+  return $SpanCopyWith<$Res>(_self.span!, (value) {
     return _then(_self.copyWith(span: value));
   });
 }
@@ -168,10 +170,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String text,  String pinyin,  String meaning,  Span span,  bool isImportant,  bool isSaved)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String text,  String type,  String pinyin,  String meaning,  Span? span)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _LyricsWord() when $default != null:
-return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.isImportant,_that.isSaved);case _:
+return $default(_that.id,_that.text,_that.type,_that.pinyin,_that.meaning,_that.span);case _:
   return orElse();
 
 }
@@ -189,10 +191,10 @@ return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String text,  String pinyin,  String meaning,  Span span,  bool isImportant,  bool isSaved)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String text,  String type,  String pinyin,  String meaning,  Span? span)  $default,) {final _that = this;
 switch (_that) {
 case _LyricsWord():
-return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.isImportant,_that.isSaved);case _:
+return $default(_that.id,_that.text,_that.type,_that.pinyin,_that.meaning,_that.span);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -209,10 +211,10 @@ return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String text,  String pinyin,  String meaning,  Span span,  bool isImportant,  bool isSaved)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String text,  String type,  String pinyin,  String meaning,  Span? span)?  $default,) {final _that = this;
 switch (_that) {
 case _LyricsWord() when $default != null:
-return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.isImportant,_that.isSaved);case _:
+return $default(_that.id,_that.text,_that.type,_that.pinyin,_that.meaning,_that.span);case _:
   return null;
 
 }
@@ -224,16 +226,15 @@ return $default(_that.id,_that.text,_that.pinyin,_that.meaning,_that.span,_that.
 @JsonSerializable()
 
 class _LyricsWord implements LyricsWord {
-  const _LyricsWord({this.id = '', required this.text, this.pinyin = '', this.meaning = '', required this.span, this.isImportant = false, this.isSaved = false});
+  const _LyricsWord({this.id = '', required this.text, required this.type, this.pinyin = '', this.meaning = '', this.span = null});
   factory _LyricsWord.fromJson(Map<String, dynamic> json) => _$LyricsWordFromJson(json);
 
 @override@JsonKey() final  String id;
 @override final  String text;
+@override final  String type;
 @override@JsonKey() final  String pinyin;
 @override@JsonKey() final  String meaning;
-@override final  Span span;
-@override@JsonKey() final  bool isImportant;
-@override@JsonKey() final  bool isSaved;
+@override@JsonKey() final  Span? span;
 
 /// Create a copy of LyricsWord
 /// with the given fields replaced by the non-null parameter values.
@@ -248,16 +249,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LyricsWord&&(identical(other.id, id) || other.id == id)&&(identical(other.text, text) || other.text == text)&&(identical(other.pinyin, pinyin) || other.pinyin == pinyin)&&(identical(other.meaning, meaning) || other.meaning == meaning)&&(identical(other.span, span) || other.span == span)&&(identical(other.isImportant, isImportant) || other.isImportant == isImportant)&&(identical(other.isSaved, isSaved) || other.isSaved == isSaved));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LyricsWord&&(identical(other.id, id) || other.id == id)&&(identical(other.text, text) || other.text == text)&&(identical(other.type, type) || other.type == type)&&(identical(other.pinyin, pinyin) || other.pinyin == pinyin)&&(identical(other.meaning, meaning) || other.meaning == meaning)&&(identical(other.span, span) || other.span == span));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,text,pinyin,meaning,span,isImportant,isSaved);
+int get hashCode => Object.hash(runtimeType,id,text,type,pinyin,meaning,span);
 
 @override
 String toString() {
-  return 'LyricsWord(id: $id, text: $text, pinyin: $pinyin, meaning: $meaning, span: $span, isImportant: $isImportant, isSaved: $isSaved)';
+  return 'LyricsWord(id: $id, text: $text, type: $type, pinyin: $pinyin, meaning: $meaning, span: $span)';
 }
 
 
@@ -268,11 +269,11 @@ abstract mixin class _$LyricsWordCopyWith<$Res> implements $LyricsWordCopyWith<$
   factory _$LyricsWordCopyWith(_LyricsWord value, $Res Function(_LyricsWord) _then) = __$LyricsWordCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String text, String pinyin, String meaning, Span span, bool isImportant, bool isSaved
+ String id, String text, String type, String pinyin, String meaning, Span? span
 });
 
 
-@override $SpanCopyWith<$Res> get span;
+@override $SpanCopyWith<$Res>? get span;
 
 }
 /// @nodoc
@@ -285,16 +286,15 @@ class __$LyricsWordCopyWithImpl<$Res>
 
 /// Create a copy of LyricsWord
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? text = null,Object? pinyin = null,Object? meaning = null,Object? span = null,Object? isImportant = null,Object? isSaved = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? text = null,Object? type = null,Object? pinyin = null,Object? meaning = null,Object? span = freezed,}) {
   return _then(_LyricsWord(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,text: null == text ? _self.text : text // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
 as String,pinyin: null == pinyin ? _self.pinyin : pinyin // ignore: cast_nullable_to_non_nullable
 as String,meaning: null == meaning ? _self.meaning : meaning // ignore: cast_nullable_to_non_nullable
-as String,span: null == span ? _self.span : span // ignore: cast_nullable_to_non_nullable
-as Span,isImportant: null == isImportant ? _self.isImportant : isImportant // ignore: cast_nullable_to_non_nullable
-as bool,isSaved: null == isSaved ? _self.isSaved : isSaved // ignore: cast_nullable_to_non_nullable
-as bool,
+as String,span: freezed == span ? _self.span : span // ignore: cast_nullable_to_non_nullable
+as Span?,
   ));
 }
 
@@ -302,9 +302,12 @@ as bool,
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
-$SpanCopyWith<$Res> get span {
-  
-  return $SpanCopyWith<$Res>(_self.span, (value) {
+$SpanCopyWith<$Res>? get span {
+    if (_self.span == null) {
+    return null;
+  }
+
+  return $SpanCopyWith<$Res>(_self.span!, (value) {
     return _then(_self.copyWith(span: value));
   });
 }

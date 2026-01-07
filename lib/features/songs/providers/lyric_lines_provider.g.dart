@@ -105,7 +105,7 @@ final class LyricLinesProvider
   }
 }
 
-String _$lyricLinesHash() => r'39f81f1868ffc80586ed58bbaf2fdd5944551570';
+String _$lyricLinesHash() => r'f003f4e847a2d4c0260c535468a0e29b6adbc559';
 
 final class LyricLinesFamily extends $Family
     with

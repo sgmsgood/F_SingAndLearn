@@ -41,7 +41,7 @@ final class LyricsControllerProvider
   }
 }
 
-String _$lyricsControllerHash() => r'090960997b51342c813e7ea87f16fbcbb8652ec7';
+String _$lyricsControllerHash() => r'3e9d781f7c40f7db89012291d3fdbbbd33ed99b3';
 
 abstract class _$LyricsController extends $Notifier<void> {
   void build();

@@ -1,15 +1,11 @@
-import 'package:f_sing_and_learn/features/songs/models/lyrics/grammar_pattern.dart';
-import 'package:f_sing_and_learn/features/songs/models/lyrics/lyrics_line.dart';
+import 'package:f_sing_and_learn/features/songs/models/song.dart';
 import 'package:f_sing_and_learn/features/songs/providers/lyric_lines_provider.dart';
+import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
 import 'package:f_sing_and_learn/features/songs/screens/widgets/lyrics_rich_text.dart';
 import 'package:f_sing_and_learn/shared/utils/fill_span.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:f_sing_and_learn/features/songs/models/song.dart';
-import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../models/lyrics/lyric_word.dart';
 import '../providers/lyrics_controller.dart';
 
 /// 이 routeObserver는 GoRouter 설정 시
@@ -68,11 +64,13 @@ class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
                 words: line.words,
               );
 
-              final patternClickable = makePatternClickableSpans(
-                patterns: line.patterns,
-              );
+              print("@!!-->> wordClickable: $wordClickable");
 
-              final clickable = [...wordClickable, ...patternClickable];
+              // final patternClickable = makePatternClickableSpans(
+              //   patterns: line.patterns,
+              // );
+
+              final clickable = [...wordClickable];
 
               return Padding(
                 padding: const EdgeInsets.only(bottom: 14),
@@ -84,6 +82,7 @@ class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
                       clickableSpans: clickable,
                       selectedId: selectedId,
                       onTap: (id) {
+                        print("@!!-->> id:: $id");
                         ref
                             .read(lyricsControllerProvider.notifier)
                             .onTokenTapped(context, id, line);

@@ -15,8 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$Song {
 
- String get id; String get title;@JsonKey(name: 'pinyin_title') String get pinyinTitle; String get singer;// JSON 키가 nickname 이니까 name 지정
-@JsonKey(name: 'nickname') String get nickname; String get youtubeLink; bool get isFavorite; SongLyrics get lyrics;
+ String get id; String get title; String get singer;@JsonKey(name: 'pinyin_title') String get pinyinTitle;@JsonKey(name: 'nickname') String get nickname; String get youtubeLink; bool get isFavorite;
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -29,16 +28,16 @@ $SongCopyWith<Song> get copyWith => _$SongCopyWithImpl<Song>(this as Song, _$ide
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Song&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.pinyinTitle, pinyinTitle) || other.pinyinTitle == pinyinTitle)&&(identical(other.singer, singer) || other.singer == singer)&&(identical(other.nickname, nickname) || other.nickname == nickname)&&(identical(other.youtubeLink, youtubeLink) || other.youtubeLink == youtubeLink)&&(identical(other.isFavorite, isFavorite) || other.isFavorite == isFavorite)&&(identical(other.lyrics, lyrics) || other.lyrics == lyrics));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Song&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.singer, singer) || other.singer == singer)&&(identical(other.pinyinTitle, pinyinTitle) || other.pinyinTitle == pinyinTitle)&&(identical(other.nickname, nickname) || other.nickname == nickname)&&(identical(other.youtubeLink, youtubeLink) || other.youtubeLink == youtubeLink)&&(identical(other.isFavorite, isFavorite) || other.isFavorite == isFavorite));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,pinyinTitle,singer,nickname,youtubeLink,isFavorite,lyrics);
+int get hashCode => Object.hash(runtimeType,id,title,singer,pinyinTitle,nickname,youtubeLink,isFavorite);
 
 @override
 String toString() {
-  return 'Song(id: $id, title: $title, pinyinTitle: $pinyinTitle, singer: $singer, nickname: $nickname, youtubeLink: $youtubeLink, isFavorite: $isFavorite, lyrics: $lyrics)';
+  return 'Song(id: $id, title: $title, singer: $singer, pinyinTitle: $pinyinTitle, nickname: $nickname, youtubeLink: $youtubeLink, isFavorite: $isFavorite)';
 }
 
 
@@ -49,11 +48,11 @@ abstract mixin class $SongCopyWith<$Res>  {
   factory $SongCopyWith(Song value, $Res Function(Song) _then) = _$SongCopyWithImpl;
 @useResult
 $Res call({
- String id, String title,@JsonKey(name: 'pinyin_title') String pinyinTitle, String singer,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite, SongLyrics lyrics
+ String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite
 });
 
 
-$SongLyricsCopyWith<$Res> get lyrics;
+
 
 }
 /// @nodoc
@@ -66,29 +65,19 @@ class _$SongCopyWithImpl<$Res>
 
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? pinyinTitle = null,Object? singer = null,Object? nickname = null,Object? youtubeLink = null,Object? isFavorite = null,Object? lyrics = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? singer = null,Object? pinyinTitle = null,Object? nickname = null,Object? youtubeLink = null,Object? isFavorite = null,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
-as String,pinyinTitle: null == pinyinTitle ? _self.pinyinTitle : pinyinTitle // ignore: cast_nullable_to_non_nullable
 as String,singer: null == singer ? _self.singer : singer // ignore: cast_nullable_to_non_nullable
+as String,pinyinTitle: null == pinyinTitle ? _self.pinyinTitle : pinyinTitle // ignore: cast_nullable_to_non_nullable
 as String,nickname: null == nickname ? _self.nickname : nickname // ignore: cast_nullable_to_non_nullable
 as String,youtubeLink: null == youtubeLink ? _self.youtubeLink : youtubeLink // ignore: cast_nullable_to_non_nullable
 as String,isFavorite: null == isFavorite ? _self.isFavorite : isFavorite // ignore: cast_nullable_to_non_nullable
-as bool,lyrics: null == lyrics ? _self.lyrics : lyrics // ignore: cast_nullable_to_non_nullable
-as SongLyrics,
+as bool,
   ));
 }
-/// Create a copy of Song
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$SongLyricsCopyWith<$Res> get lyrics {
-  
-  return $SongLyricsCopyWith<$Res>(_self.lyrics, (value) {
-    return _then(_self.copyWith(lyrics: value));
-  });
-}
+
 }
 
 
@@ -170,10 +159,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title, @JsonKey(name: 'pinyin_title')  String pinyinTitle,  String singer, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite,  SongLyrics lyrics)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Song() when $default != null:
-return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickname,_that.youtubeLink,_that.isFavorite,_that.lyrics);case _:
+return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
   return orElse();
 
 }
@@ -191,10 +180,10 @@ return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickna
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title, @JsonKey(name: 'pinyin_title')  String pinyinTitle,  String singer, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite,  SongLyrics lyrics)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)  $default,) {final _that = this;
 switch (_that) {
 case _Song():
-return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickname,_that.youtubeLink,_that.isFavorite,_that.lyrics);case _:
+return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -211,10 +200,10 @@ return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickna
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title, @JsonKey(name: 'pinyin_title')  String pinyinTitle,  String singer, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite,  SongLyrics lyrics)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)?  $default,) {final _that = this;
 switch (_that) {
 case _Song() when $default != null:
-return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickname,_that.youtubeLink,_that.isFavorite,_that.lyrics);case _:
+return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
   return null;
 
 }
@@ -226,18 +215,16 @@ return $default(_that.id,_that.title,_that.pinyinTitle,_that.singer,_that.nickna
 @JsonSerializable()
 
 class _Song implements Song {
-  const _Song({required this.id, required this.title, @JsonKey(name: 'pinyin_title') this.pinyinTitle = '', required this.singer, @JsonKey(name: 'nickname') this.nickname = '', this.youtubeLink = '', this.isFavorite = false, this.lyrics = const SongLyrics(chinese: '', lines: [])});
+  const _Song({required this.id, required this.title, required this.singer, @JsonKey(name: 'pinyin_title') this.pinyinTitle = '', @JsonKey(name: 'nickname') this.nickname = '', this.youtubeLink = '', this.isFavorite = false});
   factory _Song.fromJson(Map<String, dynamic> json) => _$SongFromJson(json);
 
 @override final  String id;
 @override final  String title;
-@override@JsonKey(name: 'pinyin_title') final  String pinyinTitle;
 @override final  String singer;
-// JSON 키가 nickname 이니까 name 지정
+@override@JsonKey(name: 'pinyin_title') final  String pinyinTitle;
 @override@JsonKey(name: 'nickname') final  String nickname;
 @override@JsonKey() final  String youtubeLink;
 @override@JsonKey() final  bool isFavorite;
-@override@JsonKey() final  SongLyrics lyrics;
 
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
@@ -252,16 +239,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Song&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.pinyinTitle, pinyinTitle) || other.pinyinTitle == pinyinTitle)&&(identical(other.singer, singer) || other.singer == singer)&&(identical(other.nickname, nickname) || other.nickname == nickname)&&(identical(other.youtubeLink, youtubeLink) || other.youtubeLink == youtubeLink)&&(identical(other.isFavorite, isFavorite) || other.isFavorite == isFavorite)&&(identical(other.lyrics, lyrics) || other.lyrics == lyrics));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Song&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.singer, singer) || other.singer == singer)&&(identical(other.pinyinTitle, pinyinTitle) || other.pinyinTitle == pinyinTitle)&&(identical(other.nickname, nickname) || other.nickname == nickname)&&(identical(other.youtubeLink, youtubeLink) || other.youtubeLink == youtubeLink)&&(identical(other.isFavorite, isFavorite) || other.isFavorite == isFavorite));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,pinyinTitle,singer,nickname,youtubeLink,isFavorite,lyrics);
+int get hashCode => Object.hash(runtimeType,id,title,singer,pinyinTitle,nickname,youtubeLink,isFavorite);
 
 @override
 String toString() {
-  return 'Song(id: $id, title: $title, pinyinTitle: $pinyinTitle, singer: $singer, nickname: $nickname, youtubeLink: $youtubeLink, isFavorite: $isFavorite, lyrics: $lyrics)';
+  return 'Song(id: $id, title: $title, singer: $singer, pinyinTitle: $pinyinTitle, nickname: $nickname, youtubeLink: $youtubeLink, isFavorite: $isFavorite)';
 }
 
 
@@ -272,11 +259,11 @@ abstract mixin class _$SongCopyWith<$Res> implements $SongCopyWith<$Res> {
   factory _$SongCopyWith(_Song value, $Res Function(_Song) _then) = __$SongCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String title,@JsonKey(name: 'pinyin_title') String pinyinTitle, String singer,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite, SongLyrics lyrics
+ String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite
 });
 
 
-@override $SongLyricsCopyWith<$Res> get lyrics;
+
 
 }
 /// @nodoc
@@ -289,30 +276,20 @@ class __$SongCopyWithImpl<$Res>
 
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? pinyinTitle = null,Object? singer = null,Object? nickname = null,Object? youtubeLink = null,Object? isFavorite = null,Object? lyrics = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? singer = null,Object? pinyinTitle = null,Object? nickname = null,Object? youtubeLink = null,Object? isFavorite = null,}) {
   return _then(_Song(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
-as String,pinyinTitle: null == pinyinTitle ? _self.pinyinTitle : pinyinTitle // ignore: cast_nullable_to_non_nullable
 as String,singer: null == singer ? _self.singer : singer // ignore: cast_nullable_to_non_nullable
+as String,pinyinTitle: null == pinyinTitle ? _self.pinyinTitle : pinyinTitle // ignore: cast_nullable_to_non_nullable
 as String,nickname: null == nickname ? _self.nickname : nickname // ignore: cast_nullable_to_non_nullable
 as String,youtubeLink: null == youtubeLink ? _self.youtubeLink : youtubeLink // ignore: cast_nullable_to_non_nullable
 as String,isFavorite: null == isFavorite ? _self.isFavorite : isFavorite // ignore: cast_nullable_to_non_nullable
-as bool,lyrics: null == lyrics ? _self.lyrics : lyrics // ignore: cast_nullable_to_non_nullable
-as SongLyrics,
+as bool,
   ));
 }
 
-/// Create a copy of Song
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$SongLyricsCopyWith<$Res> get lyrics {
-  
-  return $SongLyricsCopyWith<$Res>(_self.lyrics, (value) {
-    return _then(_self.copyWith(lyrics: value));
-  });
-}
+
 }
 
 // dart format on

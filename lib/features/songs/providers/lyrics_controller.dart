@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../../../shared/enums/lyrics_token_type.dart';
 import '../models/lyrics/grammar_pattern.dart';
-import '../models/lyrics/lyric_word.dart';
+import '../models/lyrics/lyric_word.dart'; // 파일명/클래스명 확인 (LyricsWord vs LyricWord)
 import '../models/lyrics/lyrics_line.dart';
 import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
 
@@ -15,36 +14,50 @@ class LyricsController extends _$LyricsController {
     return;
   }
 
+  /// [수정된 로직]
+  /// ID에 접두사가 없으므로, 리스트를 검색해서 타입을 찾습니다.
   void onTokenTapped(BuildContext context, String id, LyricsLine line) {
+    print("@!!-->> id: $id / line: $line");
+    // 1. 선택된 ID 상태 업데이트 (하이라이팅용)
     ref.read(selectedTokenProvider.notifier).set(id);
 
-    final type = LyricsTokenType.fromId(id);
+    // 2. 먼저 '단어(words)' 리스트에서 해당 ID를 찾아봅니다.
+    try {
+      // firstWhere는 요소를 찾으면 반환하고, 없으면 에러를 던지거나 orElse를 실행합니다.
+      final word = line.words.firstWhere((element) => element.id == id);
 
-    switch (type) {
-      case LyricsTokenType.word:
-        final word = line.words.firstWhere((e) => e.id == id);
-        _showWordSheet(context, word: word);
-        break;
-
-      case LyricsTokenType.pattern:
-        final pattern = line.patterns.firstWhere((e) => e.id == id);
-        _showPatternSheet(context, pattern: pattern);
-        break;
-
-      case LyricsTokenType.unknown:
-        debugPrint('Unknown token id: $id');
-        break;
+      print("@!!-->> word:: $word");
+      _showWordSheet(context, word: word);
+      return;
+    } catch (_) {
+      // 단어 리스트에 없으면 무시하고 다음 단계로 진행
     }
+
+    // 3. '패턴(patterns)' 리스트에서 해당 ID를 찾아봅니다.
+    try {
+      final pattern = line.patterns.firstWhere((element) => element.id == id);
+
+      // 찾았다면 패턴 바텀시트를 띄우고 종료
+      _showPatternSheet(context, pattern: pattern);
+      return;
+    } catch (_) {
+      // 패턴 리스트에도 없으면 무시
+    }
+
+    // 4. 둘 다 없으면 디버그 로그 출력 (데이터 정합성 문제)
+    debugPrint('Tapped ID $id not found in words or patterns of line ${line.id}');
   }
 
-  Future<void> _showPatternSheet(
-    BuildContext context, {
-    required GrammarPattern pattern,
-  }) {
+  // --- 아래는 바텀시트 UI 코드 (기존 유지 또는 필드명 수정) ---
+
+  Future<void> _showWordSheet(
+      BuildContext context, {
+        required LyricsWord word,
+      }) {
     return showModalBottomSheet(
       context: context,
-      showDragHandle: true,
       isScrollControlled: true,
+      showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -53,36 +66,27 @@ class LyricsController extends _$LyricsController {
           padding: EdgeInsets.only(
             left: 16,
             right: 16,
-            top: 12,
-            bottom: 24 + MediaQuery.of(context).viewInsets.bottom,
+            top: 10,
+            bottom: 30 + MediaQuery.of(context).viewInsets.bottom,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                pattern.name,
-                style: const TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
+                word.text,
+                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 8),
-              Text(pattern.meaning, style: const TextStyle(fontSize: 16)),
               const SizedBox(height: 8),
               Text(
-                pattern.koreanTip,
-                style: const TextStyle(fontSize: 14, color: Colors.grey),
+                word.pinyin,
+                style: const TextStyle(fontSize: 16, color: Colors.grey),
               ),
-              if (pattern.examples.isNotEmpty) ...[
-                const SizedBox(height: 12),
-                const Text(
-                  '예문',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                ),
-                const SizedBox(height: 6),
-                ...pattern.examples.map((e) => Text('• $e')),
-              ],
+              const SizedBox(height: 12),
+              Text(
+                word.meaning,
+                style: const TextStyle(fontSize: 18),
+              ),
             ],
           ),
         );
@@ -90,15 +94,14 @@ class LyricsController extends _$LyricsController {
     );
   }
 
-  Future<void> _showWordSheet(
-    BuildContext context, {
-    required LyricsWord word,
-    VoidCallback? onSavePressed,
-  }) {
+  Future<void> _showPatternSheet(
+      BuildContext context, {
+        required GrammarPattern pattern,
+      }) {
     return showModalBottomSheet(
       context: context,
-      showDragHandle: true,
       isScrollControlled: true,
+      showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -107,68 +110,23 @@ class LyricsController extends _$LyricsController {
           padding: EdgeInsets.only(
             left: 16,
             right: 16,
-            top: 12,
-            bottom: 24 + MediaQuery.of(context).viewInsets.bottom,
+            top: 10,
+            bottom: 30 + MediaQuery.of(context).viewInsets.bottom,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    word?.text ?? '',
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      if (word?.isImportant ?? false)
-                        const Padding(
-                          padding: EdgeInsets.only(right: 8),
-                          child: Chip(
-                            label: Text('중요 단어'),
-                            padding: EdgeInsets.symmetric(horizontal: 4),
-                          ),
-                        ),
-                      // 내 단어 저장 상태가 있으면 조건부로 표시
-                      if (word?.isSaved ?? false)
-                        const Chip(
-                          label: Text('내 단어'),
-                          padding: EdgeInsets.symmetric(horizontal: 4),
-                        ),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-
-              Text(
-                word.pinyin,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-              const SizedBox(height: 8),
-
-              Text(word.meaning, style: const TextStyle(fontSize: 16)),
-
-              const SizedBox(height: 16),
-
-              // 저장 버튼 (선택)
-              if (onSavePressed != null)
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton.icon(
-                    onPressed: onSavePressed,
-                    icon: const Icon(Icons.bookmark_add_outlined),
-                    label: Text((word?.isSaved ?? false) ? '저장됨' : '내 단어로 저장'),
-                  ),
-                ),
+              // // GrammarPattern 모델 필드명에 맞춰 수정하세요 (예: pattern vs name)
+              // Text(
+              //   pattern.pattern, // 혹은 pattern.name
+              //   style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              // ),
+              // const SizedBox(height: 12),
+              // Text(
+              //   pattern.explanation, // 혹은 pattern.meaning
+              //   style: const TextStyle(fontSize: 16),
+              // ),
             ],
           ),
         );

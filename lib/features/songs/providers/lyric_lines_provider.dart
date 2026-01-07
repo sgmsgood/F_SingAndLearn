@@ -21,7 +21,6 @@ class LyricLines extends _$LyricLines {
   Future<List<LyricsLine>> build(String songId)  {
     // 위에서 이름을 바꿨으므로, 여기서도 바뀐 Provider를 불러와야 합니다.
     final repository = ref.watch(lyricLineRepositoryProvider);
-print("@!!-->> lyrics Line Repository:: ${repository.toString()}");
     return repository.fetchLinesBySongId(songId);
   }
 }

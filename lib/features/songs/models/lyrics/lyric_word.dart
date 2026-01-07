@@ -9,11 +9,12 @@ abstract class LyricsWord with _$LyricsWord {
   const factory LyricsWord({
     @Default('') String id,
     required String text,
+    required String type,
     @Default('') String pinyin,
     @Default('') String meaning,
-    required Span span,
-    @Default(false) bool isImportant,
-    @Default(false) bool isSaved,
+    @Default(null) Span? span,
+    // @Default(false) bool isImportant,
+    // @Default(false) bool isSaved,
   }) = _LyricsWord;
 
   factory LyricsWord.fromJson(Map<String, dynamic> json) => _$LyricsWordFromJson(json);
