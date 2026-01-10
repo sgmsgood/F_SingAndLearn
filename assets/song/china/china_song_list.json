@@ -9,368 +9,2702 @@
       "nickname": "Silence Wang",
       "youtubeLink": "https://www.youtube.com/watch?v=GqiFhZvIaxI",
       "isFavorite": false,
-      "lyrics": {
-        "chinese": "措手不及",
-        "lines": [
-          {
-            "lineLyrics": "措手不及",
-            "linePinyin": "cuò shǒu bù jí",
-            "translated": "미처 손쓸 틈도 없이.",
-            "words": [
-              {
-                "id": "w_csbj",
-                "text": "措手不及",
-                "pinyin": "cuòshǒubùjí",
-                "meaning": "손쓸 틈이 없다",
-                "span": { "start": 0, "end": 4 }
+      "lyrics": [
+        {
+          "lineLyrics": "措手不及",
+          "linePinyin": "cuò shǒu bù jí",
+          "translated": "미처 손쓸 틈도 없이.",
+          "words": [
+            {
+              "id": "w_csbj",
+              "text": "措手不及",
+              "pinyin": "cuòshǒubùjí",
+              "meaning": "손쓸 틈이 없다",
+              "span": {
+                "start": 0,
+                "end": 4
               }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "遇見你我開始變得不太聰明",
-            "linePinyin": "yùjiàn nǐ, wǒ kāishǐ biàn de bú tài cōngmíng",
-            "translated": "너를 만난 후 나는 점점 똑똑하지 못해졌어.",
-            "words": [
-              { "id": "w_yujian", "text": "遇見", "pinyin": "yùjiàn", "meaning": "만나다", "span": { "start": 0, "end": 2 } },
-              { "id": "w_kaishi", "text": "開始", "pinyin": "kāishǐ", "meaning": "시작하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_biande", "text": "變得", "pinyin": "biànde", "meaning": "~하게 되다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_congming", "text": "聰明", "pinyin": "cōngmíng", "meaning": "똑똑하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "心跳加速有時候呼吸也暫停",
-            "linePinyin": "xīntiào jiāsù, yǒu shíhou hūxī yě zàntíng",
-            "translated": "심장은 빨라지고 가끔은 숨조차 멈춰.",
-            "words": [
-              { "id": "w_xintiao", "text": "心跳", "pinyin": "xīntiào", "meaning": "심장 박동", "span": { "start": 0, "end": 0 } },
-              { "id": "w_jiasu", "text": "加速", "pinyin": "jiāsù", "meaning": "가속하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_huxi", "text": "呼吸", "pinyin": "hūxī", "meaning": "호흡", "span": { "start": 0, "end": 0 } },
-              { "id": "w_zanting", "text": "暫停", "pinyin": "zàntíng", "meaning": "잠시 멈추다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "身體無法控制向你靠近",
-            "linePinyin": "shēntǐ wúfǎ kòngzhì xiàng nǐ kàojìn",
-            "translated": "몸이 말을 안 듣고 너에게 다가가.",
-            "words": [
-              { "id": "w_shenti", "text": "身體", "pinyin": "shēntǐ", "meaning": "몸", "span": { "start": 0, "end": 0 } },
-              { "id": "w_wufa", "text": "無法", "pinyin": "wúfǎ", "meaning": "~할 수 없다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_kongzhi", "text": "控制", "pinyin": "kòngzhì", "meaning": "통제하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_kaojin", "text": "靠近", "pinyin": "kàojìn", "meaning": "다가가다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "步步為營",
-            "linePinyin": "bùbùwéiyíng",
-            "translated": "한 걸음 한 걸음 조심스럽게.",
-            "words": [
-              { "id": "w_bubuweiying", "text": "步步為營", "pinyin": "bùbùwéiyíng", "meaning": "매우 신중하다", "span": { "start": 0, "end": 4 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "人物關係走向不可控的劇情",
-            "linePinyin": "",
-            "translated": "우리 관계는 통제할 수 없는 전개로 흘러가.",
-            "words": [
-              { "id": "w_renwuguanxi", "text": "人物關係", "pinyin": "rénwù guānxì", "meaning": "인물 관계", "span": { "start": 0, "end": 0 } },
-              { "id": "w_zouxiang", "text": "走向", "pinyin": "zǒuxiàng", "meaning": "흐르다, 향하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_bukekong", "text": "不可控", "pinyin": "bùkěkòng", "meaning": "통제 불가", "span": { "start": 0, "end": 0 } },
-              { "id": "w_juqing", "text": "劇情", "pinyin": "jùqíng", "meaning": "줄거리", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "窗外飛過的宣告戀愛的蜻蜓",
-            "linePinyin": "chuāngwài fēiguò de xuāngào liàn’ài de qīngtíng",
-            "translated": "창밖을 스쳐 가며 사랑을 알리는 잠자리.",
-            "words": [
-              { "id": "w_chuangwai", "text": "窗外", "pinyin": "chuāngwài", "meaning": "창밖", "span": { "start": 0, "end": 0 } },
-              { "id": "w_feiguo", "text": "飛過", "pinyin": "fēiguò", "meaning": "날아가다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xuangao", "text": "宣告", "pinyin": "xuāngào", "meaning": "선언하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_lianai", "text": "戀愛", "pinyin": "liànài", "meaning": "연애", "span": { "start": 0, "end": 0 } },
-              { "id": "w_qingting", "text": "蜻蜓", "pinyin": "qīngtíng", "meaning": "잠자리", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "想你 我的心事變得透明",
-            "linePinyin": "xiǎng nǐ wǒ de xīnshì biàn de tòumíng",
-            "translated": "너를 생각하면 내 마음은 투명해져.",
-            "words": [
-              { "id": "w_xiangni", "text": "想你", "pinyin": "xiǎng nǐ", "meaning": "너를 생각하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xinshi", "text": "心事", "pinyin": "xīnshì", "meaning": "속마음", "span": { "start": 0, "end": 0 } },
-              { "id": "w_touming", "text": "透明", "pinyin": "tòumíng", "meaning": "투명하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "一意孤行 汲汲營營 寸步難行",
-            "linePinyin": "yīyìgūxíng jíjíyíngyíng cùnbùnánxíng",
-            "translated": "고집만 부리다 보니 한 발짝도 나아가기 힘들어.",
-            "words": [
-              { "id": "w_yiyiguxing", "text": "一意孤行", "pinyin": "yīyìgūxíng", "meaning": "고집대로 밀고 가다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_cunbunanxing", "text": "寸步難行", "pinyin": "cùnbùnánxíng", "meaning": "한 걸음도 나아가기 어렵다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "慢慢累積 拼湊不完整的旋律",
-            "linePinyin": "mànmàn lěijī pīncòu bù wánzhěng de xuánlǜ",
-            "translated": "조금씩 쌓아가며 완전하지 않은 멜로디를 맞춰.",
-            "words": [
-              { "id": "w_manman", "text": "慢慢", "pinyin": "mànman", "meaning": "천천히", "span": { "start": 0, "end": 0 } },
-              { "id": "w_leiji", "text": "累積", "pinyin": "lěijī", "meaning": "쌓다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_pincou", "text": "拼湊", "pinyin": "pīncòu", "meaning": "짜맞추다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xuanlv", "text": "旋律", "pinyin": "xuánlǜ", "meaning": "선율", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "我一貫的小心翼翼 現在卻想要告訴你",
-            "linePinyin": "wǒ yīguàn de xiǎoxīnyìyì xiànzài què xiǎngyào gàosù nǐ",
-            "translated": "늘 조심하던 내가 이제는 너에게 말하고 싶어.",
-            "words": [
-              { "id": "w_yiguan", "text": "一貫", "pinyin": "yíguàn", "meaning": "줄곧", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xiaoxinyiyi", "text": "小心翼翼", "pinyin": "xiǎoxīnyìyì", "meaning": "매우 조심하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_gaosu", "text": "告訴", "pinyin": "gàosu", "meaning": "말하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "好喜歡你 像春天的花朵盛開在夏夜裡",
-            "linePinyin": "hǎo xǐhuān nǐ xiàng chūntiān de huāduǒ shèngkāi zài xiàyè lǐ",
-            "translated": "정말 좋아해, 봄의 꽃이 여름밤에 피어난 것처럼.",
-            "words": [
-              { "id": "w_haoxihuan", "text": "好喜歡", "pinyin": "hǎo xǐhuan", "meaning": "정말 좋아하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_shengkai", "text": "盛開", "pinyin": "shèngkāi", "meaning": "만개하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": [
-              {
-                "id": "p_xiang_yiyang",
-                "name": "像…(一樣)",
-                "meaning": "~처럼, ~같이",
-                "koreanTip": "감정을 비유로 표현할 때 자주 사용",
-                "examples": ["像風一樣自由。", "像孩子一樣笑。"],
-                "anchors": [
-                  {
-                    "label": "비유 시작",
-                    "index": 3,
-                    "span": { "start": 0, "end": 0 }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "遇見你我開始變得不太聰明",
+          "linePinyin": "yùjiàn nǐ, wǒ kāishǐ biàn de bú tài cōngmíng",
+          "translated": "너를 만난 후 나는 점점 똑똑하지 못해졌어.",
+          "words": [
+            {
+              "id": "w_yujian",
+              "text": "遇見",
+              "pinyin": "yùjiàn",
+              "meaning": "만나다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_kaishi",
+              "text": "開始",
+              "pinyin": "kāishǐ",
+              "meaning": "시작하다",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_biande",
+              "text": "變得",
+              "pinyin": "biànde",
+              "meaning": "~하게 되다",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_congming",
+              "text": "聰明",
+              "pinyin": "cōngmíng",
+              "meaning": "똑똑하다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "心跳加速有時候呼吸也暫停",
+          "linePinyin": "xīntiào jiāsù, yǒu shíhou hūxī yě zàntíng",
+          "translated": "심장은 빨라지고 가끔은 숨조차 멈춰.",
+          "words": [
+            {
+              "id": "w_xintiao",
+              "text": "心跳",
+              "pinyin": "xīntiào",
+              "meaning": "심장 박동",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_jiasu",
+              "text": "加速",
+              "pinyin": "jiāsù",
+              "meaning": "가속하다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_huxi",
+              "text": "呼吸",
+              "pinyin": "hūxī",
+              "meaning": "호흡",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_zanting",
+              "text": "暫停",
+              "pinyin": "zàntíng",
+              "meaning": "잠시 멈추다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "身體無法控制向你靠近",
+          "linePinyin": "shēntǐ wúfǎ kòngzhì xiàng nǐ kàojìn",
+          "translated": "몸이 말을 안 듣고 너에게 다가가.",
+          "words": [
+            {
+              "id": "w_shenti",
+              "text": "身體",
+              "pinyin": "shēntǐ",
+              "meaning": "몸",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_wufa",
+              "text": "無法",
+              "pinyin": "wúfǎ",
+              "meaning": "~할 수 없다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_kongzhi",
+              "text": "控制",
+              "pinyin": "kòngzhì",
+              "meaning": "통제하다",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_kaojin",
+              "text": "靠近",
+              "pinyin": "kàojìn",
+              "meaning": "다가가다",
+              "span": {
+                "start": 8,
+                "end": 10
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "步步為營",
+          "linePinyin": "bùbùwéiyíng",
+          "translated": "한 걸음 한 걸음 조심스럽게.",
+          "words": [
+            {
+              "id": "w_bubuweiying",
+              "text": "步步為營",
+              "pinyin": "bùbùwéiyíng",
+              "meaning": "매우 신중하다",
+              "span": {
+                "start": 0,
+                "end": 4
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "人物關係走向不可控的劇情",
+          "linePinyin": "",
+          "translated": "우리 관계는 통제할 수 없는 전개로 흘러가.",
+          "words": [
+            {
+              "id": "w_renwuguanxi",
+              "text": "人物關係",
+              "pinyin": "rénwù guānxì",
+              "meaning": "인물 관계",
+              "span": {
+                "start": 0,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_zouxiang",
+              "text": "走向",
+              "pinyin": "zǒuxiàng",
+              "meaning": "흐르다, 향하다",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_bukekong",
+              "text": "不可控",
+              "pinyin": "bùkěkòng",
+              "meaning": "통제 불가",
+              "span": {
+                "start": 6,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_juqing",
+              "text": "劇情",
+              "pinyin": "jùqíng",
+              "meaning": "줄거리",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "窗外飛過的宣告戀愛的蜻蜓",
+          "linePinyin": "chuāngwài fēiguò de xuāngào liàn’ài de qīngtíng",
+          "translated": "창밖을 스쳐 가며 사랑을 알리는 잠자리.",
+          "words": [
+            {
+              "id": "w_chuangwai",
+              "text": "窗外",
+              "pinyin": "chuāngwài",
+              "meaning": "창밖",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_feiguo",
+              "text": "飛過",
+              "pinyin": "fēiguò",
+              "meaning": "날아가다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_xuangao",
+              "text": "宣告",
+              "pinyin": "xuāngào",
+              "meaning": "선언하다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_lianai",
+              "text": "戀愛",
+              "pinyin": "liànài",
+              "meaning": "연애",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_qingting",
+              "text": "蜻蜓",
+              "pinyin": "qīngtíng",
+              "meaning": "잠자리",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "想你 我的心事變得透明",
+          "linePinyin": "xiǎng nǐ wǒ de xīnshì biàn de tòumíng",
+          "translated": "너를 생각하면 내 마음은 투명해져.",
+          "words": [
+            {
+              "id": "w_xiangni",
+              "text": "想你",
+              "pinyin": "xiǎng nǐ",
+              "meaning": "너를 생각하다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_xinshi",
+              "text": "心事",
+              "pinyin": "xīnshì",
+              "meaning": "속마음",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_touming",
+              "text": "透明",
+              "pinyin": "tòumíng",
+              "meaning": "투명하다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "一意孤行 汲汲營營 寸步難行",
+          "linePinyin": "yīyìgūxíng jíjíyíngyíng cùnbùnánxíng",
+          "translated": "고집만 부리다 보니 한 발짝도 나아가기 힘들어.",
+          "words": [
+            {
+              "id": "w_yiyiguxing",
+              "text": "一意孤行",
+              "pinyin": "yīyìgūxíng",
+              "meaning": "고집대로 밀고 가다",
+              "span": {
+                "start": 0,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_cunbunanxing",
+              "text": "寸步難行",
+              "pinyin": "cùnbùnánxíng",
+              "meaning": "한 걸음도 나아가기 어렵다",
+              "span": {
+                "start": 10,
+                "end": 14
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "慢慢累積 拼湊不完整的旋律",
+          "linePinyin": "mànmàn lěijī pīncòu bù wánzhěng de xuánlǜ",
+          "translated": "조금씩 쌓아가며 완전하지 않은 멜로디를 맞춰.",
+          "words": [
+            {
+              "id": "w_manman",
+              "text": "慢慢",
+              "pinyin": "mànman",
+              "meaning": "천천히",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_leiji",
+              "text": "累積",
+              "pinyin": "lěijī",
+              "meaning": "쌓다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_pincou",
+              "text": "拼湊",
+              "pinyin": "pīncòu",
+              "meaning": "짜맞추다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_xuanlv",
+              "text": "旋律",
+              "pinyin": "xuánlǜ",
+              "meaning": "선율",
+              "span": {
+                "start": 11,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "我一貫的小心翼翼 現在卻想要告訴你",
+          "linePinyin": "wǒ yīguàn de xiǎoxīnyìyì xiànzài què xiǎngyào gàosù nǐ",
+          "translated": "늘 조심하던 내가 이제는 너에게 말하고 싶어.",
+          "words": [
+            {
+              "id": "w_yiguan",
+              "text": "一貫",
+              "pinyin": "yíguàn",
+              "meaning": "줄곧",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_xiaoxinyiyi",
+              "text": "小心翼翼",
+              "pinyin": "xiǎoxīnyìyì",
+              "meaning": "매우 조심하다",
+              "span": {
+                "start": 4,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_gaosu",
+              "text": "告訴",
+              "pinyin": "gàosu",
+              "meaning": "말하다",
+              "span": {
+                "start": 14,
+                "end": 16
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "好喜歡你 像春天的花朵盛開在夏夜裡",
+          "linePinyin": "hǎo xǐhuān nǐ xiàng chūntiān de huāduǒ shèngkāi zài xiàyè lǐ",
+          "translated": "정말 좋아해, 봄의 꽃이 여름밤에 피어난 것처럼.",
+          "words": [
+            {
+              "id": "w_haoxihuan",
+              "text": "好喜歡",
+              "pinyin": "hǎo xǐhuan",
+              "meaning": "정말 좋아하다",
+              "span": {
+                "start": 0,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_shengkai",
+              "text": "盛開",
+              "pinyin": "shèngkāi",
+              "meaning": "만개하다",
+              "span": {
+                "start": 11,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_xiang_yiyang",
+              "name": "像…(一樣)",
+              "meaning": "~처럼, ~같이",
+              "koreanTip": "감정을 비유로 표현할 때 자주 사용",
+              "examples": [
+                "像風一樣自由。",
+                "像孩子一樣笑。"
+              ],
+              "anchors": [
+                {
+                  "label": "비유 시작",
+                  "index": 0,
+                  "span": {
+                    "start": 5,
+                    "end": 6
                   }
-                ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "如果我能給你短暫的開心",
+          "linePinyin": "rúguǒ wǒ néng gěi nǐ duǎnzàn de kāixīn",
+          "translated": "만약 내가 너에게 잠깐의 기쁨이라도 줄 수 있다면.",
+          "words": [
+            {
+              "id": "w_ruguo",
+              "text": "如果",
+              "pinyin": "rúguǒ",
+              "meaning": "만약",
+              "span": {
+                "start": 0,
+                "end": 2
               }
-            ]
-          },
-
-          {
-            "lineLyrics": "如果我能給你短暫的開心",
-            "linePinyin": "rúguǒ wǒ néng gěi nǐ duǎnzàn de kāixīn\n",
-            "translated": "만약 내가 너에게 잠깐의 기쁨이라도 줄 수 있다면.",
-            "words": [
-              { "id": "w_ruguo", "text": "如果", "pinyin": "rúguǒ", "meaning": "만약", "span": { "start": 0, "end": 0 } },
-              { "id": "w_duanzan", "text": "短暫", "pinyin": "duǎnzàn", "meaning": "짧다, 잠깐", "span": { "start": 0, "end": 0 } },
-              { "id": "w_kaixin", "text": "開心", "pinyin": "kāixīn", "meaning": "행복하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": [
-              {
-                "id": "p_ruguo",
-                "name": "如果…",
-                "meaning": "~만약 …라면",
-                "koreanTip": "가정·소망을 표현",
-                "examples": ["如果有時間，我會去。", "如果可以，我想留下。"],
-                "anchors": [
-                  { "label": "가정", "index": 0, "span": { "start": 0, "end": 0 } }
-                ]
+            },
+            {
+              "id": "w_duanzan",
+              "text": "短暫",
+              "pinyin": "duǎnzàn",
+              "meaning": "짧다, 잠깐",
+              "span": {
+                "start": 6,
+                "end": 8
               }
-            ]
-          },
-
-          {
-            "lineLyrics": "像微風吹過雨後泥土的香氣",
-            "linePinyin": "xiàng wēifēng chuīguò yǔhòu nítǔ de xiāngqì",
-            "translated": "비 온 뒤 흙을 스치는 산들바람의 향기처럼.",
-            "words": [
-              { "id": "w_weifeng", "text": "微風", "pinyin": "wēifēng", "meaning": "산들바람", "span": { "start": 0, "end": 0 } },
-              { "id": "w_yuhou", "text": "雨後", "pinyin": "yǔhòu", "meaning": "비 온 뒤", "span": { "start": 0, "end": 0 } },
-              { "id": "w_nitu", "text": "泥土", "pinyin": "nítǔ", "meaning": "흙", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xiangqi", "text": "香氣", "pinyin": "xiāngqì", "meaning": "향기", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": [
-              {
-                "id": "p_xiang_yiyang",
-                "name": "像",
-                "meaning": "~처럼, ~같이",
-                "koreanTip": "감정을 비유로 표현할 때 자주 사용",
-                "examples": ["像風一樣自由。", "像孩子一樣笑。"],
-                "anchors": [
-                  {
-                    "label": "비유 시작",
-                    "index": 3,
-                    "span": { "start": 0, "end": 1 }
+            },
+            {
+              "id": "w_kaixin",
+              "text": "開心",
+              "pinyin": "kāixīn",
+              "meaning": "행복하다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_ruguo",
+              "name": "如果…",
+              "meaning": "~만약 …라면",
+              "koreanTip": "가정·소망을 표현",
+              "examples": [
+                "如果有時間，我會去。",
+                "如果可以，我想留下。"
+              ],
+              "anchors": [
+                {
+                  "label": "가정",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 2
                   }
-                ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "像微風吹過雨後泥土的香氣",
+          "linePinyin": "xiàng wēifēng chuīguò yǔhòu nítǔ de xiāngqì",
+          "translated": "비 온 뒤 흙을 스치는 산들바람의 향기처럼.",
+          "words": [
+            {
+              "id": "w_weifeng",
+              "text": "微風",
+              "pinyin": "wēifēng",
+              "meaning": "산들바람",
+              "span": {
+                "start": 1,
+                "end": 3
               }
-            ]
-          },
-
-          {
-            "lineLyrics": "像迷途的旅人到達了目的地",
-            "linePinyin": "",
-            "translated": "길을 잃었던 여행자가 목적지에 도착한 것처럼.",
-            "words": [
-              { "id": "w_mitu", "text": "迷途", "pinyin": "mítú", "meaning": "길을 잃다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_lvren", "text": "旅人", "pinyin": "lǚrén", "meaning": "여행자", "span": { "start": 0, "end": 0 } },
-              { "id": "w_daoda", "text": "到達", "pinyin": "dàodá", "meaning": "도착하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_mudidi", "text": "目的地", "pinyin": "mùdìdì", "meaning": "목적지", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "像飛舞蝴蝶被絢爛色彩吸引",
-            "linePinYin": "",
-            "translated": "화려한 색에 이끌린 나비가 날아드는 것처럼.",
-            "words": [
-              { "id": "w_feiwu", "text": "飛舞", "pinyin": "fēiwǔ", "meaning": "날아다니다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_hudie", "text": "蝴蝶", "pinyin": "húdié", "meaning": "나비", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xuanlan", "text": "絢爛", "pinyin": "xuànlàn", "meaning": "화려하다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xiyin", "text": "吸引", "pinyin": "xīyǐn", "meaning": "끌어당기다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "像流傳許久神秘的愛情咒語",
-            "linePinyin": "",
-            "translated": "오래도록 전해 내려온 신비한 사랑의 주문처럼.",
-            "words": [
-              { "id": "w_liuchuan", "text": "流傳", "pinyin": "liúchuán", "meaning": "전해지다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_shenmi", "text": "神秘", "pinyin": "shénmì", "meaning": "신비롭다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_zhouyu", "text": "咒語", "pinyin": "zhòuyǔ", "meaning": "주문", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "像喧囂的午後突然變的安靜",
-            "linePinyin": "",
-            "translated": "시끄럽던 오후가 갑자기 고요해진 것처럼.",
-            "words": [
-              { "id": "w_xuanxiao", "text": "喧囂", "pinyin": "xuānxiāo", "meaning": "소란스럽다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_wuhou", "text": "午後", "pinyin": "wǔhòu", "meaning": "오후", "span": { "start": 0, "end": 0 } },
-              { "id": "w_turan", "text": "突然", "pinyin": "túrán", "meaning": "갑자기", "span": { "start": 0, "end": 0 } },
-              { "id": "w_anjing", "text": "安靜", "pinyin": "ānjìng", "meaning": "조용하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "像眼淚落入海底逃離了孤寂",
-            "linePinyin": "",
-            "translated": "눈물이 바다 밑으로 가라앉아 외로움을 벗어나는 것처럼.",
-            "words": [
-              { "id": "w_yanlei", "text": "眼淚", "pinyin": "yǎnlèi", "meaning": "눈물", "span": { "start": 0, "end": 0 } },
-              { "id": "w_haidi", "text": "海底", "pinyin": "hǎidǐ", "meaning": "바닷속", "span": { "start": 0, "end": 0 } },
-              { "id": "w_taoli", "text": "逃離", "pinyin": "táolí", "meaning": "벗어나다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_guji", "text": "孤寂", "pinyin": "gūjì", "meaning": "고독", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "春夏秋冬四季 不停隨著時間在變化",
-            "linePinyin": "",
-            "translated": "사계절은 시간에 따라 끊임없이 변해가.",
-            "words": [
-              { "id": "w_siji", "text": "四季", "pinyin": "sìjì", "meaning": "사계절", "span": { "start": 0, "end": 0 } },
-              { "id": "w_suizhe", "text": "隨著", "pinyin": "suízhe", "meaning": "~에 따라", "span": { "start": 0, "end": 0 } },
-              { "id": "w_bianhua", "text": "變化", "pinyin": "biànhuà", "meaning": "변하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "你離開了家 在他鄉會有人照顧你嗎？",
-            "linePinyin": "",
-            "translated": "집을 떠난 너, 타지에서는 누가 널 챙겨줄까?",
-            "words": [
-              { "id": "w_likai", "text": "離開", "pinyin": "líkāi", "meaning": "떠나다", "span": { "start": 0, "end": 0 } },
-              { "id": "w_taxiang", "text": "他鄉", "pinyin": "tāxiāng", "meaning": "타향", "span": { "start": 0, "end": 0 } },
-              { "id": "w_zhaogu", "text": "照顧", "pinyin": "zhàogù", "meaning": "돌보다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "能不能大聲告訴你？",
-            "linePinyin": "",
-            "translated": "이번엔 크게 말해도 될까?",
-            "words": [
-              { "id": "w_nengbuneng", "text": "能不能", "pinyin": "néng bù néng", "meaning": "~해도 될까", "span": { "start": 0, "end": 3 } },
-              { "id": "w_dasheng", "text": "大聲", "pinyin": "dàshēng", "meaning": "큰 소리로", "span": { "start": 3, "end": 5 } },
-              { "id": "w_gaosu2", "text": "告訴", "pinyin": "gàosu", "meaning": "말하다", "span": { "start": 5, "end": 7 } }
-            ],
-            "patterns": [
-              {
-                "id": "p_neng_bu_neng",
-                "name": "能不能…？",
-                "meaning": "~해도 될까?",
-                "koreanTip": "조심스러운 요청이나 감정 고백에 자주 사용",
-                "examples": ["能不能陪我一下？", "能不能相信我？"],
-                "anchors": [
-                  {
-                    "label": "가능 여부",
-                    "index": 0,
-                    "span": { "start": 0, "end": 3 }
+            },
+            {
+              "id": "w_yuhou",
+              "text": "雨後",
+              "pinyin": "yǔhòu",
+              "meaning": "비 온 뒤",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_nitu",
+              "text": "泥土",
+              "pinyin": "nítǔ",
+              "meaning": "흙",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_xiangqi",
+              "text": "香氣",
+              "pinyin": "xiāngqì",
+              "meaning": "향기",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_xiang_yiyang",
+              "name": "像",
+              "meaning": "~처럼, ~같이",
+              "koreanTip": "감정을 비유로 표현할 때 자주 사용",
+              "examples": [
+                "像風一樣自由。",
+                "像孩子一樣笑。"
+              ],
+              "anchors": [
+                {
+                  "label": "비유 시작",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 1
                   }
-                ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "像迷途的旅人到達了目的地",
+          "linePinyin": "",
+          "translated": "길을 잃었던 여행자가 목적지에 도착한 것처럼.",
+          "words": [
+            {
+              "id": "w_mitu",
+              "text": "迷途",
+              "pinyin": "mítú",
+              "meaning": "길을 잃다",
+              "span": {
+                "start": 1,
+                "end": 3
               }
-            ]
-          },
-
-          {
-            "lineLyrics": "那一句「我愛你」在晴天的風裡",
-            "linePinyin": "",
-            "translated": "그 한마디 ‘사랑해’는 맑은 날의 바람 속에 있고.",
-            "words": [
-              { "id": "w_nayiju", "text": "那一句", "pinyin": "nà yí jù", "meaning": "그 한마디", "span": { "start": 0, "end": 0 } },
-              { "id": "w_woaini", "text": "我愛你", "pinyin": "wǒ ài nǐ", "meaning": "사랑해", "span": { "start": 0, "end": 0 } },
-              { "id": "w_qingtian", "text": "晴天", "pinyin": "qíngtiān", "meaning": "맑은 날", "span": { "start": 0, "end": 0 } },
-              { "id": "w_feng", "text": "風", "pinyin": "fēng", "meaning": "바람", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          },
-
-          {
-            "lineLyrics": "而每一顆雨滴 都是我在想你",
-            "linePinyin": "",
-            "translated": "떨어지는 빗방울 하나하나가 전부 너를 생각하는 마음이야.",
-            "words": [
-              { "id": "w_meiyi", "text": "每一", "pinyin": "měi yī", "meaning": "하나하나 모두", "span": { "start": 0, "end": 0 } },
-              { "id": "w_ke", "text": "顆", "pinyin": "kē", "meaning": "'빗방울'을 세는 수사", "span": { "start": 0, "end": 0 } },
-              { "id": "w_yudi", "text": "雨滴", "pinyin": "yǔdī", "meaning": "빗방울", "span": { "start": 0, "end": 0 } },
-              { "id": "w_xiangni2", "text": "想你", "pinyin": "xiǎng nǐ", "meaning": "너를 생각하다", "span": { "start": 0, "end": 0 } }
-            ],
-            "patterns": []
-          }
-        ]
-      }
+            },
+            {
+              "id": "w_lvren",
+              "text": "旅人",
+              "pinyin": "lǚrén",
+              "meaning": "여행자",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_daoda",
+              "text": "到達",
+              "pinyin": "dàodá",
+              "meaning": "도착하다",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_mudidi",
+              "text": "目的地",
+              "pinyin": "mùdìdì",
+              "meaning": "목적지",
+              "span": {
+                "start": 9,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像飛舞蝴蝶被絢爛色彩吸引",
+          "linePinyin": "",
+          "translated": "화려한 색에 이끌린 나비가 날아드는 것처럼.",
+          "words": [
+            {
+              "id": "w_feiwu",
+              "text": "飛舞",
+              "pinyin": "fēiwǔ",
+              "meaning": "날아다니다",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_hudie",
+              "text": "蝴蝶",
+              "pinyin": "húdié",
+              "meaning": "나비",
+              "span": {
+                "start": 3,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_xuanlan",
+              "text": "絢爛",
+              "pinyin": "xuànlàn",
+              "meaning": "화려하다",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_xiyin",
+              "text": "吸引",
+              "pinyin": "xīyǐn",
+              "meaning": "끌어당기다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像流傳許久神秘的愛情咒語",
+          "linePinyin": "",
+          "translated": "오래도록 전해 내려온 신비한 사랑의 주문처럼.",
+          "words": [
+            {
+              "id": "w_liuchuan",
+              "text": "流傳",
+              "pinyin": "liúchuán",
+              "meaning": "전해지다",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_shenmi",
+              "text": "神秘",
+              "pinyin": "shénmì",
+              "meaning": "신비롭다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_zhouyu",
+              "text": "咒語",
+              "pinyin": "zhòuyǔ",
+              "meaning": "주문",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像喧囂的午後突然變的安靜",
+          "linePinyin": "",
+          "translated": "시끄럽던 오후가 갑자기 고요해진 것처럼.",
+          "words": [
+            {
+              "id": "w_xuanxiao",
+              "text": "喧囂",
+              "pinyin": "xuānxiāo",
+              "meaning": "소란스럽다",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_wuhou",
+              "text": "午後",
+              "pinyin": "wǔhòu",
+              "meaning": "오후",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_turan",
+              "text": "突然",
+              "pinyin": "túrán",
+              "meaning": "갑자기",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_anjing",
+              "text": "安靜",
+              "pinyin": "ānjìng",
+              "meaning": "조용하다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像眼淚落入海底逃離了孤寂",
+          "linePinyin": "",
+          "translated": "눈물이 바다 밑으로 가라앉아 외로움을 벗어나는 것처럼.",
+          "words": [
+            {
+              "id": "w_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_haidi",
+              "text": "海底",
+              "pinyin": "hǎidǐ",
+              "meaning": "바닷속",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_taoli",
+              "text": "逃離",
+              "pinyin": "táolí",
+              "meaning": "벗어나다",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_guji",
+              "text": "孤寂",
+              "pinyin": "gūjì",
+              "meaning": "고독",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "春夏秋冬四季 不停隨著時間在變化",
+          "linePinyin": "",
+          "translated": "사계절은 시간에 따라 끊임없이 변해가.",
+          "words": [
+            {
+              "id": "w_siji",
+              "text": "四季",
+              "pinyin": "sìjì",
+              "meaning": "사계절",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_suizhe",
+              "text": "隨著",
+              "pinyin": "suízhe",
+              "meaning": "~에 따라",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            },
+            {
+              "id": "w_bianhua",
+              "text": "變化",
+              "pinyin": "biànhuà",
+              "meaning": "변하다",
+              "span": {
+                "start": 14,
+                "end": 16
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你離開了家 在他鄉會有人照顧你嗎？",
+          "linePinyin": "",
+          "translated": "집을 떠난 너, 타지에서는 누가 널 챙겨줄까?",
+          "words": [
+            {
+              "id": "w_likai",
+              "text": "離開",
+              "pinyin": "líkāi",
+              "meaning": "떠나다",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_taxiang",
+              "text": "他鄉",
+              "pinyin": "tāxiāng",
+              "meaning": "타향",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_zhaogu",
+              "text": "照顧",
+              "pinyin": "zhàogù",
+              "meaning": "돌보다",
+              "span": {
+                "start": 12,
+                "end": 14
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "能不能大聲告訴你？",
+          "linePinyin": "",
+          "translated": "이번엔 크게 말해도 될까?",
+          "words": [
+            {
+              "id": "w_nengbuneng",
+              "text": "能不能",
+              "pinyin": "néng bù néng",
+              "meaning": "~해도 될까",
+              "span": {
+                "start": 0,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_dasheng",
+              "text": "大聲",
+              "pinyin": "dàshēng",
+              "meaning": "큰 소리로",
+              "span": {
+                "start": 3,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_gaosu2",
+              "text": "告訴",
+              "pinyin": "gàosu",
+              "meaning": "말하다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_neng_bu_neng",
+              "name": "能不能…？",
+              "meaning": "~해도 될까?",
+              "koreanTip": "조심스러운 요청이나 감정 고백에 자주 사용",
+              "examples": [
+                "能不能陪我一下？",
+                "能不能相信我？"
+              ],
+              "anchors": [
+                {
+                  "label": "가능 여부",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "那一句「我愛你」在晴天的風裡",
+          "linePinyin": "",
+          "translated": "그 한마디 ‘사랑해’는 맑은 날의 바람 속에 있고.",
+          "words": [
+            {
+              "id": "w_nayiju",
+              "text": "那一句",
+              "pinyin": "nà yí jù",
+              "meaning": "그 한마디",
+              "span": {
+                "start": 0,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_woaini",
+              "text": "我愛你",
+              "pinyin": "wǒ ài nǐ",
+              "meaning": "사랑해",
+              "span": {
+                "start": 4,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_qingtian",
+              "text": "晴天",
+              "pinyin": "qíngtiān",
+              "meaning": "맑은 날",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            },
+            {
+              "id": "w_feng",
+              "text": "風",
+              "pinyin": "fēng",
+              "meaning": "바람",
+              "span": {
+                "start": 12,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "而每一顆雨滴 都是我在想你",
+          "linePinyin": "",
+          "translated": "떨어지는 빗방울 하나하나가 전부 너를 생각하는 마음이야.",
+          "words": [
+            {
+              "id": "w_meiyi",
+              "text": "每一",
+              "pinyin": "měi yī",
+              "meaning": "하나하나 모두",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_ke",
+              "text": "顆",
+              "pinyin": "kē",
+              "meaning": "'빗방울'을 세는 수사",
+              "span": {
+                "start": 3,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_yudi",
+              "text": "雨滴",
+              "pinyin": "yǔdī",
+              "meaning": "빗방울",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_xiangni2",
+              "text": "想你",
+              "pinyin": "xiǎng nǐ",
+              "meaning": "너를 생각하다",
+              "span": {
+                "start": 11,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        }
+      ]
+    },
+    {
+      "id": "song_custom_001",
+      "title": "乖乖啊，今天的你也辛苦了",
+      "pinyinTitle": "guāiguāi a, jīntiān de nǐ yě xīnkǔ le",
+      "name": "承桓",
+      "nickname": "",
+      "youtubeLink": "",
+      "isFavorite": false,
+      "lyrics": [
+        {
+          "lineLyrics": "今天處理不好情緒 也沒關係",
+          "linePinyin": "jīntiān chǔlǐ bù hǎo qíngxù, yě méi guānxì",
+          "translated": "오늘 감정을 잘 다루지 못해도 괜찮아.",
+          "words": [
+            {
+              "id": "w_000_jintian",
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "meaning": "오늘",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_000_qingxu",
+              "text": "情緒",
+              "pinyin": "qíngxù",
+              "meaning": "감정",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_000_meiguanxi",
+              "text": "沒關係",
+              "pinyin": "méi guānxì",
+              "meaning": "괜찮아, 상관없어",
+              "span": {
+                "start": 10,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "無精打采的嘆氣讓我抱抱你",
+          "linePinyin": "wújīngdǎcǎi de tànqì ràng wǒ bàobào nǐ",
+          "translated": "기운 없는 한숨이 나로 하여금 너를 꼭 안아주고 싶게 해.",
+          "words": [
+            {
+              "id": "w_001_wujingdacai",
+              "text": "無精打采",
+              "pinyin": "wújīngdǎcǎi",
+              "meaning": "기운이 없다, 풀이 죽다",
+              "span": {
+                "start": 0,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_001_tanqi",
+              "text": "嘆氣",
+              "pinyin": "tànqì",
+              "meaning": "한숨 쉬다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_001_baobao",
+              "text": "抱抱",
+              "pinyin": "bàobào",
+              "meaning": "꼭 안아주기",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "偶爾出錯也可以 大家都會迷失",
+          "linePinyin": "ǒu’ěr chūcuò yě kěyǐ, dàjiā dōu huì míshī",
+          "translated": "가끔 실수해도 괜찮아. 누구나 길을 잃을 때가 있어.",
+          "words": [
+            {
+              "id": "w_002_ouer",
+              "text": "偶爾",
+              "pinyin": "ǒu’ěr",
+              "meaning": "가끔",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_002_chucuo",
+              "text": "出錯",
+              "pinyin": "chūcuò",
+              "meaning": "실수하다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_002_mishi",
+              "text": "迷失",
+              "pinyin": "míshī",
+              "meaning": "길을 잃다, 방황하다",
+              "span": {
+                "start": 12,
+                "end": 14
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "做事難免有閃失",
+          "linePinyin": "zuòshì nánmiǎn yǒu shǎnshī",
+          "translated": "일하다 보면 실수는 피할 수 없어.",
+          "words": [
+            {
+              "id": "w_003_nanmian",
+              "text": "難免",
+              "pinyin": "nánmiǎn",
+              "meaning": "피하기 어렵다, 어쩔 수 없이",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_003_shanshi",
+              "text": "閃失",
+              "pinyin": "shǎnshī",
+              "meaning": "실수, 작은 잘못",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "不要在意別人怎麼看你",
+          "linePinyin": "búyào zàiyì biérén zěnme kàn nǐ",
+          "translated": "다른 사람이 널 어떻게 보는지 신경 쓰지 마.",
+          "words": [
+            {
+              "id": "w_004_buyao",
+              "text": "不要",
+              "pinyin": "búyào",
+              "meaning": "~하지 마",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_004_zaiyi",
+              "text": "在意",
+              "pinyin": "zàiyì",
+              "meaning": "신경 쓰다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_004_bieren",
+              "text": "別人",
+              "pinyin": "biérén",
+              "meaning": "남, 다른 사람",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "如果跑累了請你停下來休息",
+          "linePinyin": "rúguǒ pǎo lèi le, qǐng nǐ tíng xiàlái xiūxí",
+          "translated": "달리다 지쳤다면, 멈춰서 쉬어도 돼.",
+          "words": [
+            {
+              "id": "w_005_ruguo",
+              "text": "如果",
+              "pinyin": "rúguǒ",
+              "meaning": "만약",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_005_tingxialai",
+              "text": "停下來",
+              "pinyin": "tíng xiàlái",
+              "meaning": "멈추다",
+              "span": {
+                "start": 7,
+                "end": 10
+              }
+            },
+            {
+              "id": "w_005_xiuxi",
+              "text": "休息",
+              "pinyin": "xiūxí",
+              "meaning": "쉬다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_ruguo",
+              "name": "如果…",
+              "meaning": "~만약 …라면",
+              "koreanTip": "가정/조건을 말할 때",
+              "examples": [
+                "如果你累了，就休息一下。",
+                "如果可以，我想陪你。"
+              ],
+              "anchors": [
+                {
+                  "label": "가정",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "你也可以去擁有脆弱的權利",
+          "linePinyin": "nǐ yě kěyǐ qù yōngyǒu cuìruò de quánlì",
+          "translated": "너는 약해질 권리도 가질 수 있어.",
+          "words": [
+            {
+              "id": "w_006_yongyou",
+              "text": "擁有",
+              "pinyin": "yōngyǒu",
+              "meaning": "가지다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_006_cuiruo",
+              "text": "脆弱",
+              "pinyin": "cuìruò",
+              "meaning": "연약하다, 취약하다",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_006_quanli",
+              "text": "權利",
+              "pinyin": "quánlì",
+              "meaning": "권리",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "偶爾放空時間也不是一件壞事",
+          "linePinyin": "ǒu’ěr fàngkōng shíjiān yě bú shì yí jiàn huàishì",
+          "translated": "가끔 멍 때리는 시간도 나쁜 일이 아니야.",
+          "words": [
+            {
+              "id": "w_007_fangkong",
+              "text": "放空",
+              "pinyin": "fàngkōng",
+              "meaning": "멍 때리다, 비우다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_007_shijian",
+              "text": "時間",
+              "pinyin": "shíjiān",
+              "meaning": "시간",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_007_huaishi",
+              "text": "壞事",
+              "pinyin": "huàishì",
+              "meaning": "나쁜 일",
+              "span": {
+                "start": 11,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "記得抬頭看",
+          "linePinyin": "jìde táitóu kàn",
+          "translated": "고개 들어 보는 걸 잊지 마.",
+          "words": [
+            {
+              "id": "w_008_jide",
+              "text": "記得",
+              "pinyin": "jìde",
+              "meaning": "기억하다, 잊지 말다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_008_taitou",
+              "text": "抬頭",
+              "pinyin": "táitóu",
+              "meaning": "고개를 들다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像你一樣 發光的星星",
+          "linePinyin": "xiàng nǐ yíyàng, fāguāng de xīngxing",
+          "translated": "너처럼 빛나는 별들을.",
+          "words": [
+            {
+              "id": "w_009_xiang",
+              "text": "像",
+              "pinyin": "xiàng",
+              "meaning": "~처럼",
+              "span": {
+                "start": 0,
+                "end": 1
+              }
+            },
+            {
+              "id": "w_009_faguang",
+              "text": "發光",
+              "pinyin": "fāguāng",
+              "meaning": "빛나다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_009_xingxing",
+              "text": "星星",
+              "pinyin": "xīngxing",
+              "meaning": "별",
+              "span": {
+                "start": 8,
+                "end": 10
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_xiang_yiyang",
+              "name": "像…一樣",
+              "meaning": "~처럼, ~같이",
+              "koreanTip": "비유로 감정/상태를 표현할 때",
+              "examples": [
+                "像你一樣勇敢。",
+                "像星星一樣閃亮。"
+              ],
+              "anchors": [
+                {
+                  "label": "비유 시작",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_010_qingsong",
+              "text": "輕鬆",
+              "pinyin": "qīngsōng",
+              "meaning": "가볍게, 태연하게",
+              "span": {
+                "start": 3,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_010_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_010_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "好好愛自己 不要再那麼累",
+          "linePinyin": "hǎohǎo ài zìjǐ, búyào zài nàme lèi",
+          "translated": "자기 자신을 잘 사랑해. 더 이상 그렇게 지치지 마.",
+          "words": [
+            {
+              "id": "w_011_haohao",
+              "text": "好好",
+              "pinyin": "hǎohǎo",
+              "meaning": "잘, 제대로",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_011_aiziji",
+              "text": "愛自己",
+              "pinyin": "ài zìjǐ",
+              "meaning": "자기 자신을 사랑하다",
+              "span": {
+                "start": 2,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_011_name",
+              "text": "那麼",
+              "pinyin": "nàme",
+              "meaning": "그렇게",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天的你也辛苦了",
+          "linePinyin": "guāiguāi a, jīntiān de nǐ yě xīnkǔ le",
+          "translated": "착하지, 오늘의 너도 고생했어.",
+          "words": [
+            {
+              "id": "w_012_guaiguai",
+              "text": "乖乖",
+              "pinyin": "guāiguāi",
+              "meaning": "착하지(다정한 호칭)",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_012_jintian",
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "meaning": "오늘",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_012_xinku",
+              "text": "辛苦",
+              "pinyin": "xīnkǔ",
+              "meaning": "고생하다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你一定要把愛 多留給自己啊",
+          "linePinyin": "nǐ yídìng yào bǎ ài, duō liú gěi zìjǐ a",
+          "translated": "너는 꼭 사랑을 더 많이 자기 자신에게 남겨줘.",
+          "words": [
+            {
+              "id": "w_013_yiding",
+              "text": "一定",
+              "pinyin": "yídìng",
+              "meaning": "반드시, 꼭",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_013_ziji",
+              "text": "自己",
+              "pinyin": "zìjǐ",
+              "meaning": "자기 자신",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_ba",
+              "name": "把 + 목적어 + 동사",
+              "meaning": "목적어를 ~하게 하다(처리/변화 강조)",
+              "koreanTip": "‘사랑을 더 남겨줘’처럼 ‘무엇을 어떻게’ 처리하는 느낌",
+              "examples": [
+                "把門關上。",
+                "把這句話記下來。"
+              ],
+              "anchors": [
+                {
+                  "label": "把",
+                  "index": 0,
+                  "span": {
+                    "start": 4,
+                    "end": 5
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_014_qingsong",
+              "text": "輕鬆",
+              "pinyin": "qīngsōng",
+              "meaning": "가볍게, 태연하게",
+              "span": {
+                "start": 3,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_014_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_014_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "靠近陽光 做自己的向日葵",
+          "linePinyin": "kàojìn yángguāng, zuò zìjǐ de xiàngrìkuí",
+          "translated": "햇빛에 가까이 가서, 나만의 해바라기가 돼.",
+          "words": [
+            {
+              "id": "w_015_kaojin",
+              "text": "靠近",
+              "pinyin": "kàojìn",
+              "meaning": "가까이 다가가다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_015_yangguang",
+              "text": "陽光",
+              "pinyin": "yángguāng",
+              "meaning": "햇빛",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_015_xiangrikui",
+              "text": "向日葵",
+              "pinyin": "xiàngrìkuí",
+              "meaning": "해바라기",
+              "span": {
+                "start": 9,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天你已經很棒了",
+          "linePinyin": "guāiguāi a, jīntiān nǐ yǐjīng hěn bàng le",
+          "translated": "착하지, 오늘 너는 이미 충분히 잘했어.",
+          "words": [
+            {
+              "id": "w_016_jintian",
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "meaning": "오늘",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_016_yijing",
+              "text": "已經",
+              "pinyin": "yǐjīng",
+              "meaning": "이미",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_016_henbang",
+              "text": "很棒",
+              "pinyin": "hěn bàng",
+              "meaning": "아주 멋지다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "希望你只是曬著太陽 都會很快樂",
+          "linePinyin": "xīwàng nǐ zhǐshì shài zhe tàiyáng, dōu huì hěn kuàilè",
+          "translated": "너는 그저 햇살을 쬐기만 해도 금방 행복해지길 바라.",
+          "words": [
+            {
+              "id": "w_017_xiwang",
+              "text": "希望",
+              "pinyin": "xīwàng",
+              "meaning": "~하길 바라다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_017_taiyang",
+              "text": "太陽",
+              "pinyin": "tàiyáng",
+              "meaning": "태양, 햇살",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_017_kuaile",
+              "text": "快樂",
+              "pinyin": "kuàilè",
+              "meaning": "행복하다",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "今天處理不好情緒 也沒關係",
+          "linePinyin": "jīntiān chǔlǐ bù hǎo qíngxù, yě méi guānxì",
+          "translated": "오늘 감정을 잘 다루지 못해도 괜찮아.",
+          "words": [
+            {
+              "id": "w_018_jintian",
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "meaning": "오늘",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_018_qingxu",
+              "text": "情緒",
+              "pinyin": "qíngxù",
+              "meaning": "감정",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_018_meiguanxi",
+              "text": "沒關係",
+              "pinyin": "méi guānxì",
+              "meaning": "괜찮아, 상관없어",
+              "span": {
+                "start": 10,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "無精打采的嘆氣讓我抱抱你",
+          "linePinyin": "wújīngdǎcǎi de tànqì ràng wǒ bàobào nǐ",
+          "translated": "기운 없는 한숨이 나로 하여금 너를 꼭 안아주고 싶게 해.",
+          "words": [
+            {
+              "id": "w_019_wujingdacai",
+              "text": "無精打采",
+              "pinyin": "wújīngdǎcǎi",
+              "meaning": "기운이 없다, 풀이 죽다",
+              "span": {
+                "start": 0,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_019_tanqi",
+              "text": "嘆氣",
+              "pinyin": "tànqì",
+              "meaning": "한숨 쉬다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_019_baobao",
+              "text": "抱抱",
+              "pinyin": "bàobào",
+              "meaning": "꼭 안아주기",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "偶爾出錯也可以 大家都會迷失",
+          "linePinyin": "ǒu’ěr chūcuò yě kěyǐ, dàjiā dōu huì míshī",
+          "translated": "가끔 실수해도 괜찮아. 누구나 길을 잃을 때가 있어.",
+          "words": [
+            {
+              "id": "w_020_ouer",
+              "text": "偶爾",
+              "pinyin": "ǒu’ěr",
+              "meaning": "가끔",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_020_chucuo",
+              "text": "出錯",
+              "pinyin": "chūcuò",
+              "meaning": "실수하다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_020_mishi",
+              "text": "迷失",
+              "pinyin": "míshī",
+              "meaning": "길을 잃다, 방황하다",
+              "span": {
+                "start": 12,
+                "end": 14
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "做事難免有閃失",
+          "linePinyin": "zuòshì nánmiǎn yǒu shǎnshī",
+          "translated": "일하다 보면 실수는 피할 수 없어.",
+          "words": [
+            {
+              "id": "w_021_nanmian",
+              "text": "難免",
+              "pinyin": "nánmiǎn",
+              "meaning": "피하기 어렵다, 어쩔 수 없이",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_021_shanshi",
+              "text": "閃失",
+              "pinyin": "shǎnshī",
+              "meaning": "실수, 작은 잘못",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "不要在意別人怎麼看你",
+          "linePinyin": "búyào zàiyì biérén zěnme kàn nǐ",
+          "translated": "다른 사람이 널 어떻게 보는지 신경 쓰지 마.",
+          "words": [
+            {
+              "id": "w_022_buyao",
+              "text": "不要",
+              "pinyin": "búyào",
+              "meaning": "~하지 마",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_022_zaiyi",
+              "text": "在意",
+              "pinyin": "zàiyì",
+              "meaning": "신경 쓰다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_022_bieren",
+              "text": "別人",
+              "pinyin": "biérén",
+              "meaning": "남, 다른 사람",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "如果跑累了請你停下來休息",
+          "linePinyin": "rúguǒ pǎo lèi le, qǐng nǐ tíng xiàlái xiūxí",
+          "translated": "달리다 지쳤다면, 멈춰서 쉬어도 돼.",
+          "words": [
+            {
+              "id": "w_023_ruguo",
+              "text": "如果",
+              "pinyin": "rúguǒ",
+              "meaning": "만약",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_023_tingxialai",
+              "text": "停下來",
+              "pinyin": "tíng xiàlái",
+              "meaning": "멈추다",
+              "span": {
+                "start": 7,
+                "end": 10
+              }
+            },
+            {
+              "id": "w_023_xiuxi",
+              "text": "休息",
+              "pinyin": "xiūxí",
+              "meaning": "쉬다",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_ruguo",
+              "name": "如果…",
+              "meaning": "~만약 …라면",
+              "koreanTip": "가정/조건을 말할 때",
+              "examples": [
+                "如果你累了，就休息一下。",
+                "如果可以，我想陪你。"
+              ],
+              "anchors": [
+                {
+                  "label": "가정",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "你也可以去擁有脆弱的權利",
+          "linePinyin": "nǐ yě kěyǐ qù yōngyǒu cuìruò de quánlì",
+          "translated": "너는 약해질 권리도 가질 수 있어.",
+          "words": [
+            {
+              "id": "w_024_yongyou",
+              "text": "擁有",
+              "pinyin": "yōngyǒu",
+              "meaning": "가지다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_024_cuiruo",
+              "text": "脆弱",
+              "pinyin": "cuìruò",
+              "meaning": "연약하다, 취약하다",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_024_quanli",
+              "text": "權利",
+              "pinyin": "quánlì",
+              "meaning": "권리",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "偶爾放空時間也不是一件壞事",
+          "linePinyin": "ǒu’ěr fàngkōng shíjiān yě bú shì yí jiàn huàishì",
+          "translated": "가끔 멍 때리는 시간도 나쁜 일이 아니야.",
+          "words": [
+            {
+              "id": "w_025_fangkong",
+              "text": "放空",
+              "pinyin": "fàngkōng",
+              "meaning": "멍 때리다, 비우다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_025_shijian",
+              "text": "時間",
+              "pinyin": "shíjiān",
+              "meaning": "시간",
+              "span": {
+                "start": 4,
+                "end": 6
+              }
+            },
+            {
+              "id": "w_025_huaishi",
+              "text": "壞事",
+              "pinyin": "huàishì",
+              "meaning": "나쁜 일",
+              "span": {
+                "start": 11,
+                "end": 13
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "記得抬頭看",
+          "linePinyin": "jìde táitóu kàn",
+          "translated": "고개 들어 보는 걸 잊지 마.",
+          "words": [
+            {
+              "id": "w_026_jide",
+              "text": "記得",
+              "pinyin": "jìde",
+              "meaning": "기억하다, 잊지 말다",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_026_taitou",
+              "text": "抬頭",
+              "pinyin": "táitóu",
+              "meaning": "고개를 들다",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "像你一樣 發光的星星",
+          "linePinyin": "xiàng nǐ yíyàng, fāguāng de xīngxing",
+          "translated": "너처럼 빛나는 별들을.",
+          "words": [
+            {
+              "id": "w_027_xiang",
+              "text": "像",
+              "pinyin": "xiàng",
+              "meaning": "~처럼",
+              "span": {
+                "start": 0,
+                "end": 1
+              }
+            },
+            {
+              "id": "w_027_faguang",
+              "text": "發光",
+              "pinyin": "fāguāng",
+              "meaning": "빛나다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_027_xingxing",
+              "text": "星星",
+              "pinyin": "xīngxing",
+              "meaning": "별",
+              "span": {
+                "start": 8,
+                "end": 10
+              }
+            }
+          ],
+          "patterns": [
+            {
+              "id": "p_xiang_yiyang",
+              "name": "像…一樣",
+              "meaning": "~처럼, ~같이",
+              "koreanTip": "비유로 감정/상태를 표현할 때",
+              "examples": [
+                "像你一樣勇敢。",
+                "像星星一樣閃亮。"
+              ],
+              "anchors": [
+                {
+                  "label": "비유 시작",
+                  "index": 0,
+                  "span": {
+                    "start": 0,
+                    "end": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_028_qingsong",
+              "text": "輕鬆",
+              "pinyin": "qīngsōng",
+              "meaning": "가볍게, 태연하게",
+              "span": {
+                "start": 3,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_028_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_028_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "好好愛自己 不要再那麼累",
+          "linePinyin": "hǎohǎo ài zìjǐ, búyào zài nàme lèi",
+          "translated": "자기 자신을 잘 사랑해. 더 이상 그렇게 지치지 마.",
+          "words": [
+            {
+              "id": "w_029_aiziji",
+              "text": "愛自己",
+              "pinyin": "ài zìjǐ",
+              "meaning": "자기 자신을 사랑하다",
+              "span": {
+                "start": 2,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_029_buyao",
+              "text": "不要",
+              "pinyin": "búyào",
+              "meaning": "~하지 마",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_029_lei",
+              "text": "累",
+              "pinyin": "lèi",
+              "meaning": "지치다",
+              "span": {
+                "start": 11,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天的你也辛苦了",
+          "linePinyin": "guāiguāi a, jīntiān de nǐ yě xīnkǔ le",
+          "translated": "착하지, 오늘의 너도 고생했어.",
+          "words": [
+            {
+              "id": "w_030_guaiguai",
+              "text": "乖乖",
+              "pinyin": "guāiguāi",
+              "meaning": "착하지(다정한 호칭)",
+              "span": {
+                "start": 0,
+                "end": 2
+              }
+            },
+            {
+              "id": "w_030_xinku",
+              "text": "辛苦",
+              "pinyin": "xīnkǔ",
+              "meaning": "고생하다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你一定要把愛 多留給自己啊",
+          "linePinyin": "nǐ yídìng yào bǎ ài, duō liú gěi zìjǐ a",
+          "translated": "너는 꼭 사랑을 더 많이 자기 자신에게 남겨줘.",
+          "words": [
+            {
+              "id": "w_031_yiding",
+              "text": "一定",
+              "pinyin": "yídìng",
+              "meaning": "반드시, 꼭",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_031_ba",
+              "text": "把",
+              "pinyin": "bǎ",
+              "meaning": "~을(를) 처리/변화시키다(把 구문)",
+              "span": {
+                "start": 4,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_031_ziji",
+              "text": "自己",
+              "pinyin": "zìjǐ",
+              "meaning": "자기 자신",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_032_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_032_toutou",
+              "text": "偷偷",
+              "pinyin": "tōutōu",
+              "meaning": "몰래",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            },
+            {
+              "id": "w_032_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "靠近陽光 做自己的向日葵",
+          "linePinyin": "kàojìn yángguāng, zuò zìjǐ de xiàngrìkuí",
+          "translated": "햇빛에 가까이 가서, 나만의 해바라기가 돼.",
+          "words": [
+            {
+              "id": "w_033_yangguang",
+              "text": "陽光",
+              "pinyin": "yángguāng",
+              "meaning": "햇빛",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_033_xiangrikui",
+              "text": "向日葵",
+              "pinyin": "xiàngrìkuí",
+              "meaning": "해바라기",
+              "span": {
+                "start": 9,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天你已經很棒了",
+          "linePinyin": "guāiguāi a, jīntiān nǐ yǐjīng hěn bàng le",
+          "translated": "착하지, 오늘 너는 이미 충분히 잘했어.",
+          "words": [
+            {
+              "id": "w_034_yijing",
+              "text": "已經",
+              "pinyin": "yǐjīng",
+              "meaning": "이미",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_034_bang",
+              "text": "棒",
+              "pinyin": "bàng",
+              "meaning": "멋지다",
+              "span": {
+                "start": 10,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "希望你只是曬著太陽 都會很快樂",
+          "linePinyin": "xīwàng nǐ zhǐshì shài zhe tàiyáng, dōu huì hěn kuàilè",
+          "translated": "너는 그저 햇살을 쬐기만 해도 금방 행복해지길 바라.",
+          "words": [
+            {
+              "id": "w_035_shaizhe",
+              "text": "曬著",
+              "pinyin": "shài zhe",
+              "meaning": "~을 쬐고 있다",
+              "span": {
+                "start": 5,
+                "end": 7
+              }
+            },
+            {
+              "id": "w_035_taiyang",
+              "text": "太陽",
+              "pinyin": "tàiyáng",
+              "meaning": "태양, 햇살",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_035_kuaile",
+              "text": "快樂",
+              "pinyin": "kuàilè",
+              "meaning": "행복하다",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_036_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_036_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "好好愛自己 不要再那麼累",
+          "linePinyin": "hǎohǎo ài zìjǐ, búyào zài nàme lèi",
+          "translated": "자기 자신을 잘 사랑해. 더 이상 그렇게 지치지 마.",
+          "words": [
+            {
+              "id": "w_037_aiziji",
+              "text": "愛自己",
+              "pinyin": "ài zìjǐ",
+              "meaning": "자기 자신을 사랑하다",
+              "span": {
+                "start": 2,
+                "end": 5
+              }
+            },
+            {
+              "id": "w_037_name",
+              "text": "那麼",
+              "pinyin": "nàme",
+              "meaning": "그렇게",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天的你也辛苦了",
+          "linePinyin": "guāiguāi a, jīntiān de nǐ yě xīnkǔ le",
+          "translated": "착하지, 오늘의 너도 고생했어.",
+          "words": [
+            {
+              "id": "w_038_xinku",
+              "text": "辛苦",
+              "pinyin": "xīnkǔ",
+              "meaning": "고생하다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你一定要把愛 多留給自己啊",
+          "linePinyin": "nǐ yídìng yào bǎ ài, duō liú gěi zìjǐ a",
+          "translated": "너는 꼭 사랑을 더 많이 자기 자신에게 남겨줘.",
+          "words": [
+            {
+              "id": "w_039_yiding",
+              "text": "一定",
+              "pinyin": "yídìng",
+              "meaning": "반드시, 꼭",
+              "span": {
+                "start": 1,
+                "end": 3
+              }
+            },
+            {
+              "id": "w_039_ziji",
+              "text": "自己",
+              "pinyin": "zìjǐ",
+              "meaning": "자기 자신",
+              "span": {
+                "start": 10,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "你總是輕鬆說沒事 卻偷偷抹眼淚",
+          "linePinyin": "nǐ zǒngshì qīngsōng shuō méishì, què tōutōu mǒ yǎnlèi",
+          "translated": "너는 늘 괜찮다고 가볍게 말하지만, 몰래 눈물을 닦아.",
+          "words": [
+            {
+              "id": "w_040_meishi",
+              "text": "沒事",
+              "pinyin": "méishì",
+              "meaning": "괜찮아/아무 일 없어",
+              "span": {
+                "start": 6,
+                "end": 8
+              }
+            },
+            {
+              "id": "w_040_yanlei",
+              "text": "眼淚",
+              "pinyin": "yǎnlèi",
+              "meaning": "눈물",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "靠近陽光 做自己的向日葵",
+          "linePinyin": "kàojìn yángguāng, zuò zìjǐ de xiàngrìkuí",
+          "translated": "햇빛에 가까이 가서, 나만의 해바라기가 돼.",
+          "words": [
+            {
+              "id": "w_041_yangguang",
+              "text": "陽光",
+              "pinyin": "yángguāng",
+              "meaning": "햇빛",
+              "span": {
+                "start": 2,
+                "end": 4
+              }
+            },
+            {
+              "id": "w_041_xiangrikui",
+              "text": "向日葵",
+              "pinyin": "xiàngrìkuí",
+              "meaning": "해바라기",
+              "span": {
+                "start": 9,
+                "end": 12
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "乖乖啊 今天你已經很棒了",
+          "linePinyin": "guāiguāi a, jīntiān nǐ yǐjīng hěn bàng le",
+          "translated": "착하지, 오늘 너는 이미 충분히 잘했어.",
+          "words": [
+            {
+              "id": "w_042_yijing",
+              "text": "已經",
+              "pinyin": "yǐjīng",
+              "meaning": "이미",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_042_henbang",
+              "text": "很棒",
+              "pinyin": "hěn bàng",
+              "meaning": "아주 멋지다",
+              "span": {
+                "start": 9,
+                "end": 11
+              }
+            }
+          ],
+          "patterns": []
+        },
+        {
+          "lineLyrics": "希望你只是曬著太陽 都會很快樂",
+          "linePinyin": "xīwàng nǐ zhǐshì shài zhe tàiyáng, dōu huì hěn kuàilè",
+          "translated": "너는 그저 햇살을 쬐기만 해도 금방 행복해지길 바라.",
+          "words": [
+            {
+              "id": "w_043_taiyang",
+              "text": "太陽",
+              "pinyin": "tàiyáng",
+              "meaning": "태양, 햇살",
+              "span": {
+                "start": 7,
+                "end": 9
+              }
+            },
+            {
+              "id": "w_043_kuaile",
+              "text": "快樂",
+              "pinyin": "kuàilè",
+              "meaning": "행복하다",
+              "span": {
+                "start": 13,
+                "end": 15
+              }
+            }
+          ],
+          "patterns": []
+        }
+      ]
     }
   ]
 }
