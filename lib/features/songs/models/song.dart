@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'lyrics/lyrics_line.dart';
 import 'lyrics/song_lyrics.dart';
 
 part 'song.freezed.dart';
@@ -18,7 +19,7 @@ abstract class Song with _$Song {
 
     @Default('') String youtubeLink,
     @Default(false) bool isFavorite,
-    @Default(SongLyrics(chinese: '', lines: [])) SongLyrics lyrics,
+    @Default([]) List<LyricsLine> lyrics,
   }) = _Song;
 
   factory Song.fromJson(Map<String, dynamic> json) => _$SongFromJson(json);

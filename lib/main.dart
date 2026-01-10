@@ -28,8 +28,8 @@ class SingAndLearnApp extends ConsumerWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent),
         useMaterial3: true,
+        colorSchemeSeed: Colors.deepPurple,
       ),
       routerConfig: router,
     );
