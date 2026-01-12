@@ -17,7 +17,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   // 각 탭에 보여줄 페이지 리스트
   final List<Widget> _pages = const [
     SongListScreen(),
-    FavoritesScreen(),
+    FavoriteScreen(),
     StudyScreen()
   ];
 

@@ -1,4 +1,4 @@
-
+import 'package:f_sing_and_learn/features/songs/screens/widgets/favorite_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -21,12 +21,18 @@ class SongListScreen extends ConsumerWidget {
             leading: const Icon(Icons.music_note),
             title: Text(song.title),
             subtitle: Text(song.singer),
-            trailing: const Icon(Icons.chevron_right),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                FavoriteIconButton(
+                  isFavorite: song.isFavorite,
+                  onChanged: (bool) {},
+                ),
+                const Icon(Icons.chevron_right),
+              ],
+            ),
             onTap: () {
-              context.pushNamed(
-                AppRoute.lyrics.name,
-                extra: song,
-              );
+              context.pushNamed(AppRoute.lyrics.name, extra: song);
             },
           );
         },

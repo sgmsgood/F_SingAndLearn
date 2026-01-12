@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$Song {
 
- String get id; String get title; String get singer;@JsonKey(name: 'pinyin_title') String get pinyinTitle;@JsonKey(name: 'nickname') String get nickname; String get youtubeLink; bool get isFavorite;
+ String get id; String get title; String get singer;@JsonKey(name: 'pinyin_title') String get pinyinTitle;@JsonKey(name: 'nickname') String get nickname; String get youtubeLink;@JsonKey(name: 'is_favorite') bool get isFavorite;
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -48,7 +48,7 @@ abstract mixin class $SongCopyWith<$Res>  {
   factory $SongCopyWith(Song value, $Res Function(Song) _then) = _$SongCopyWithImpl;
 @useResult
 $Res call({
- String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite
+ String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink,@JsonKey(name: 'is_favorite') bool isFavorite
 });
 
 
@@ -159,7 +159,7 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink, @JsonKey(name: 'is_favorite')  bool isFavorite)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Song() when $default != null:
 return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
@@ -180,7 +180,7 @@ return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickna
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink, @JsonKey(name: 'is_favorite')  bool isFavorite)  $default,) {final _that = this;
 switch (_that) {
 case _Song():
 return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
@@ -200,7 +200,7 @@ return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickna
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink,  bool isFavorite)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title,  String singer, @JsonKey(name: 'pinyin_title')  String pinyinTitle, @JsonKey(name: 'nickname')  String nickname,  String youtubeLink, @JsonKey(name: 'is_favorite')  bool isFavorite)?  $default,) {final _that = this;
 switch (_that) {
 case _Song() when $default != null:
 return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickname,_that.youtubeLink,_that.isFavorite);case _:
@@ -215,7 +215,7 @@ return $default(_that.id,_that.title,_that.singer,_that.pinyinTitle,_that.nickna
 @JsonSerializable()
 
 class _Song implements Song {
-  const _Song({required this.id, required this.title, required this.singer, @JsonKey(name: 'pinyin_title') this.pinyinTitle = '', @JsonKey(name: 'nickname') this.nickname = '', this.youtubeLink = '', this.isFavorite = false});
+  const _Song({required this.id, required this.title, required this.singer, @JsonKey(name: 'pinyin_title') this.pinyinTitle = '', @JsonKey(name: 'nickname') this.nickname = '', this.youtubeLink = '', @JsonKey(name: 'is_favorite') this.isFavorite = false});
   factory _Song.fromJson(Map<String, dynamic> json) => _$SongFromJson(json);
 
 @override final  String id;
@@ -224,7 +224,7 @@ class _Song implements Song {
 @override@JsonKey(name: 'pinyin_title') final  String pinyinTitle;
 @override@JsonKey(name: 'nickname') final  String nickname;
 @override@JsonKey() final  String youtubeLink;
-@override@JsonKey() final  bool isFavorite;
+@override@JsonKey(name: 'is_favorite') final  bool isFavorite;
 
 /// Create a copy of Song
 /// with the given fields replaced by the non-null parameter values.
@@ -259,7 +259,7 @@ abstract mixin class _$SongCopyWith<$Res> implements $SongCopyWith<$Res> {
   factory _$SongCopyWith(_Song value, $Res Function(_Song) _then) = __$SongCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink, bool isFavorite
+ String id, String title, String singer,@JsonKey(name: 'pinyin_title') String pinyinTitle,@JsonKey(name: 'nickname') String nickname, String youtubeLink,@JsonKey(name: 'is_favorite') bool isFavorite
 });
 
 

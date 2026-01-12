@@ -1,6 +1,7 @@
 import 'package:f_sing_and_learn/features/songs/models/song.dart';
 import 'package:f_sing_and_learn/features/songs/providers/lyric_lines_provider.dart';
 import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
+import 'package:f_sing_and_learn/features/songs/screens/widgets/favorite_button.dart';
 import 'package:f_sing_and_learn/features/songs/screens/widgets/lyrics_rich_text.dart';
 import 'package:f_sing_and_learn/shared/utils/fill_span.dart';
 import 'package:flutter/material.dart';
@@ -8,12 +9,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/lyrics_controller.dart';
 
-/// 이 routeObserver는 GoRouter 설정 시
-/// MaterialApp.router(
-///   routerConfig: goRouter,
-///   navigatorObservers: () => [routeObserver],
-/// )
-/// 이런 식으로 등록해줘야 동작해.
 final RouteObserver<PageRoute<dynamic>> routeObserver =
     RouteObserver<PageRoute<dynamic>>();
 
@@ -47,10 +42,17 @@ class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
   Widget build(BuildContext context) {
     final selectedId = ref.watch(selectedTokenProvider);
     final lyricsAsync = ref.watch(lyricLinesProvider(widget.song.id));
-    // final lyrics = widget.song.lyrics;
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.song.title)),
+      appBar: AppBar(
+        title: Text(widget.song.title),
+        actions: [
+          GestureDetector(
+            onTap: () {},
+            child: FavoriteIconButton(isFavorite: widget.song.isFavorite, onChanged: (bool) {}),
+          ),
+        ],
+      ),
       body: lyricsAsync.when(
         data: (lines) {
           return ListView.builder(
@@ -63,12 +65,6 @@ class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
                 line: line.lineLyrics,
                 words: line.words,
               );
-
-              print("@!!-->> wordClickable: $wordClickable");
-
-              // final patternClickable = makePatternClickableSpans(
-              //   patterns: line.patterns,
-              // );
 
               final clickable = [...wordClickable];
 

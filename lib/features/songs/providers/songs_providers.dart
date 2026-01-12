@@ -17,8 +17,21 @@ class SongRepositoryNotifier extends _$SongRepositoryNotifier {
 class FetchSongList extends _$FetchSongList {
   @override
   Future<List<Song>> build() async {
-    // 클래스형에서는 ref.watch 대신 그냥 ref.watch를 씁니다 (this.ref)
     final repository = ref.watch(songRepositoryProvider);
     return repository.fetchSongs();
+  }
+}
+
+@riverpod
+class FetchFavoriteSongList extends _$FetchFavoriteSongList {
+  @override
+  Future<List<Song>> build() async {
+    final songsAsyncValue = ref.watch(fetchSongListProvider);
+
+    return songsAsyncValue.when(
+      data: (songs) => songs.where((song) => song.isFavorite).toList(),
+      loading: () => [],
+      error: (e, st) => [],
+    );
   }
 }

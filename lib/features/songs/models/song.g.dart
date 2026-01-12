@@ -13,7 +13,7 @@ _Song _$SongFromJson(Map<String, dynamic> json) => _Song(
   pinyinTitle: json['pinyin_title'] as String? ?? '',
   nickname: json['nickname'] as String? ?? '',
   youtubeLink: json['youtubeLink'] as String? ?? '',
-  isFavorite: json['isFavorite'] as bool? ?? false,
+  isFavorite: json['is_favorite'] as bool? ?? false,
 );
 
 Map<String, dynamic> _$SongToJson(_Song instance) => <String, dynamic>{
@@ -23,5 +23,5 @@ Map<String, dynamic> _$SongToJson(_Song instance) => <String, dynamic>{
   'pinyin_title': instance.pinyinTitle,
   'nickname': instance.nickname,
   'youtubeLink': instance.youtubeLink,
-  'isFavorite': instance.isFavorite,
+  'is_favorite': instance.isFavorite,
 };

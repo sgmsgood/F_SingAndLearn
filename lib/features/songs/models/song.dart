@@ -13,7 +13,7 @@ abstract class Song with _$Song {
     @JsonKey(name: 'pinyin_title') @Default('') String pinyinTitle,
     @JsonKey(name: 'nickname') @Default('') String nickname,
     @Default('') String youtubeLink,
-    @Default(false) bool isFavorite,
+    @JsonKey(name: 'is_favorite') @Default(false) bool isFavorite,
   }) = _Song;
 
   factory Song.fromJson(Map<String, dynamic> json) => _$SongFromJson(json);

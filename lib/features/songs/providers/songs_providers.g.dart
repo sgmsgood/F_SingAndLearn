@@ -105,3 +105,48 @@ abstract class _$FetchSongList extends $AsyncNotifier<List<Song>> {
     element.handleCreate(ref, build);
   }
 }
+
+@ProviderFor(FetchFavoriteSongList)
+final fetchFavoriteSongListProvider = FetchFavoriteSongListProvider._();
+
+final class FetchFavoriteSongListProvider
+    extends $AsyncNotifierProvider<FetchFavoriteSongList, List<Song>> {
+  FetchFavoriteSongListProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'fetchFavoriteSongListProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$fetchFavoriteSongListHash();
+
+  @$internal
+  @override
+  FetchFavoriteSongList create() => FetchFavoriteSongList();
+}
+
+String _$fetchFavoriteSongListHash() =>
+    r'2ffaba67791cf9ff716c2e87ff2c3592090a8db0';
+
+abstract class _$FetchFavoriteSongList extends $AsyncNotifier<List<Song>> {
+  FutureOr<List<Song>> build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final ref = this.ref as $Ref<AsyncValue<List<Song>>, List<Song>>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<AsyncValue<List<Song>>, List<Song>>,
+              AsyncValue<List<Song>>,
+              Object?,
+              Object?
+            >;
+    element.handleCreate(ref, build);
+  }
+}
