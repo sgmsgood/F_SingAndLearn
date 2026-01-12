@@ -1089,7 +1089,7 @@
       ]
     },
     {
-      "id": "song_custom_001",
+      "id": "song_dyx_gga",
       "title": "乖乖啊，今天的你也辛苦了",
       "pinyinTitle": "guāiguāi a, jīntiān de nǐ yě xīnkǔ le",
       "name": "承桓",
@@ -2705,6 +2705,359 @@
           "patterns": []
         }
       ]
-    }
+    },
+    {
+          "id": "song_custom_003",
+          "title": "就是愛你",
+          "pinyinTitle": "jiu shi ai ni",
+          "name": "苡慧",
+          "nickname": "yihuik",
+          "youtubeLink": "",
+          "isFavorite": false,
+          "lyrics": [
+            {
+              "lineLyrics": "我一直都想對你說",
+              "linePinyin": "wǒ yìzhí dōu xiǎng duì nǐ shuō",
+              "translated": "나는 계속 너에게 말하고 싶었어.",
+              "words": [
+                { "id": "w_000_wo", "text": "我", "pinyin": "wǒ", "meaning": "나", "span": { "start": 0, "end": 1 } },
+                { "id": "w_000_yizhi", "text": "一直", "pinyin": "yìzhí", "meaning": "줄곧, 계속", "span": { "start": 1, "end": 3 } },
+                { "id": "w_000_dui", "text": "對", "pinyin": "duì", "meaning": "~에게", "span": { "start": 5, "end": 6 } },
+                { "id": "w_000_ni", "text": "你", "pinyin": "nǐ", "meaning": "너", "span": { "start": 6, "end": 7 } },
+                { "id": "w_000_shuo", "text": "說", "pinyin": "shuō", "meaning": "말하다", "span": { "start": 7, "end": 8 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "你給我想不到的快樂 像綠洲給了沙漠",
+              "linePinyin": "nǐ gěi wǒ xiǎng bù dào de kuàilè, xiàng lǜzhōu gěi le shāmò",
+              "translated": "너는 내가 상상도 못한 기쁨을 줬어, 마치 오아시스가 사막에 주는 것처럼.",
+              "words": [
+                { "id": "w_001_geiwo", "text": "給我", "pinyin": "gěi wǒ", "meaning": "나에게 주다", "span": { "start": 1, "end": 3 } },
+                { "id": "w_001_xiangbudao", "text": "想不到", "pinyin": "xiǎng bù dào", "meaning": "상상도 못하다", "span": { "start": 3, "end": 6 } },
+                { "id": "w_001_kuaile", "text": "快樂", "pinyin": "kuàilè", "meaning": "기쁨, 행복", "span": { "start": 7, "end": 9 } },
+                { "id": "w_001_xiang", "text": "像", "pinyin": "xiàng", "meaning": "~처럼", "span": { "start": 10, "end": 11 } },
+                { "id": "w_001_lvzhou", "text": "綠洲", "pinyin": "lǜzhōu", "meaning": "오아시스", "span": { "start": 11, "end": 13 } },
+                { "id": "w_001_shamo", "text": "沙漠", "pinyin": "shāmò", "meaning": "사막", "span": { "start": 15, "end": 17 } }
+              ],
+              "patterns": [
+                {
+                  "id": "p_xiang",
+                  "name": "像…",
+                  "meaning": "~처럼",
+                  "koreanTip": "비유(비교) 표현",
+                  "examples": ["像夢一樣。", "像風一樣自由。"],
+                  "anchors": [
+                    { "label": "비유 시작", "index": 0, "span": { "start": 10, "end": 11 } }
+                  ]
+                }
+              ]
+            },
+            {
+              "lineLyrics": "說 你會永遠陪著我",
+              "linePinyin": "shuō nǐ huì yǒngyuǎn péizhe wǒ",
+              "translated": "너는 영원히 내 곁에 있어주겠다고 말했지.",
+              "words": [
+                { "id": "w_002_shuo", "text": "說", "pinyin": "shuō", "meaning": "말하다", "span": { "start": 0, "end": 1 } },
+                { "id": "w_002_hui", "text": "會", "pinyin": "huì", "meaning": "~할 것이다", "span": { "start": 3, "end": 4 } },
+                { "id": "w_002_yongyuan", "text": "永遠", "pinyin": "yǒngyuǎn", "meaning": "영원히", "span": { "start": 4, "end": 6 } },
+                { "id": "w_002_peizhe", "text": "陪著", "pinyin": "péizhe", "meaning": "곁에 함께하다", "span": { "start": 6, "end": 8 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "做我的根 我翅膀 讓我飛 也有回去的窩",
+              "linePinyin": "zuò wǒ de gēn, wǒ de chìbǎng, ràng wǒ fēi, yě yǒu huíqù de wō",
+              "translated": "내 뿌리가 되고, 내 날개가 되어줘. 내가 날게도 해주고, 돌아갈 보금자리도 있어.",
+              "words": [
+                { "id": "w_003_wode", "text": "我的", "pinyin": "wǒ de", "meaning": "나의", "span": { "start": 1, "end": 3 } },
+                { "id": "w_003_gen", "text": "根", "pinyin": "gēn", "meaning": "뿌리", "span": { "start": 3, "end": 4 } },
+                { "id": "w_003_chibang", "text": "翅膀", "pinyin": "chìbǎng", "meaning": "날개", "span": { "start": 6, "end": 8 } },
+                { "id": "w_003_rangwo", "text": "讓我", "pinyin": "ràng wǒ", "meaning": "나를 ~하게 하다", "span": { "start": 9, "end": 11 } },
+                { "id": "w_003_huiqu", "text": "回去", "pinyin": "huíqù", "meaning": "돌아가다", "span": { "start": 15, "end": 17 } },
+                { "id": "w_003_wo", "text": "窩", "pinyin": "wō", "meaning": "보금자리", "span": { "start": 18, "end": 19 } }
+              ],
+              "patterns": [
+                {
+                  "id": "p_rang",
+                  "name": "讓 + 사람 + 동사",
+                  "meaning": "~가 ~하게 하다",
+                  "koreanTip": "사역 표현",
+                  "examples": ["讓我想想。", "讓你久等了。"],
+                  "anchors": [
+                    { "label": "사역", "index": 0, "span": { "start": 9, "end": 10 } }
+                  ]
+                }
+              ]
+            },
+            {
+              "lineLyrics": "我願意 我也可以 付出一切 也不會可惜",
+              "linePinyin": "wǒ yuànyì, wǒ yě kěyǐ, fùchū yíqiè, yě bú huì kěxī",
+              "translated": "나는 기꺼이 그럴게. 나도 뭐든 내줄 수 있어, 아깝지 않아.",
+              "words": [
+                { "id": "w_004_yuanyi", "text": "願意", "pinyin": "yuànyì", "meaning": "기꺼이 ~하다", "span": { "start": 1, "end": 3 } },
+                { "id": "w_004_yekeyi", "text": "也可以", "pinyin": "yě kěyǐ", "meaning": "~도 할 수 있다/괜찮다", "span": { "start": 5, "end": 8 } },
+                { "id": "w_004_fuchu", "text": "付出", "pinyin": "fùchū", "meaning": "바치다, 내주다", "span": { "start": 9, "end": 11 } },
+                { "id": "w_004_yiqie", "text": "一切", "pinyin": "yíqiè", "meaning": "모든 것", "span": { "start": 11, "end": 13 } },
+                { "id": "w_004_buhui", "text": "不會", "pinyin": "bú huì", "meaning": "~하지 않을 거야", "span": { "start": 15, "end": 17 } },
+                { "id": "w_004_kexi", "text": "可惜", "pinyin": "kěxī", "meaning": "아깝다", "span": { "start": 17, "end": 19 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就在一起 看時間流逝 要記得我們相愛的方式",
+              "linePinyin": "jiù zài yìqǐ, kàn shíjiān liúshì, yào jìde wǒmen xiāng’ài de fāngshì",
+              "translated": "그냥 함께 있어, 시간이 흘러가는 걸 보자. 우리가 사랑하는 방식을 기억해줘.",
+              "words": [
+                { "id": "w_005_zaiyiqi", "text": "在一起", "pinyin": "zài yìqǐ", "meaning": "함께(연인/한곳에)", "span": { "start": 1, "end": 4 } },
+                { "id": "w_005_shijian", "text": "時間", "pinyin": "shíjiān", "meaning": "시간", "span": { "start": 6, "end": 8 } },
+                { "id": "w_005_liushi", "text": "流逝", "pinyin": "liúshì", "meaning": "흘러가다(시간)", "span": { "start": 8, "end": 10 } },
+                { "id": "w_005_jide", "text": "記得", "pinyin": "jìde", "meaning": "기억하다/잊지 말다", "span": { "start": 12, "end": 14 } },
+                { "id": "w_005_women", "text": "我們", "pinyin": "wǒmen", "meaning": "우리", "span": { "start": 14, "end": 16 } },
+                { "id": "w_005_xiangai", "text": "相愛", "pinyin": "xiāng’ài", "meaning": "서로 사랑하다", "span": { "start": 16, "end": 18 } },
+                { "id": "w_005_fangshi", "text": "方式", "pinyin": "fāngshì", "meaning": "방식", "span": { "start": 19, "end": 21 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 有悲有喜 有你 平淡也有了意義",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, yǒu bēi yǒu xǐ, yǒu nǐ, píngdàn yě yǒu le yìyì",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 슬픔도 기쁨도 있고, 네가 있어. 평범함도 의미가 생겼어.",
+              "words": [
+                { "id": "w_006_jiushi", "text": "就是", "pinyin": "jiùshì", "meaning": "바로 ~다(강조)", "span": { "start": 0, "end": 2 } },
+                { "id": "w_006_aizheni", "text": "愛著你", "pinyin": "ài zhe nǐ", "meaning": "사랑하고 있어(너를)", "span": { "start": 4, "end": 7 } },
+                { "id": "w_006_youbeiyouxi", "text": "有悲有喜", "pinyin": "yǒu bēi yǒu xǐ", "meaning": "슬픔도 있고 기쁨도 있다", "span": { "start": 8, "end": 12 } },
+                { "id": "w_006_youni", "text": "有你", "pinyin": "yǒu nǐ", "meaning": "네가 있다", "span": { "start": 13, "end": 15 } },
+                { "id": "w_006_pingdan", "text": "平淡", "pinyin": "píngdàn", "meaning": "평범함, 담담함", "span": { "start": 16, "end": 18 } },
+                { "id": "w_006_youle", "text": "有了", "pinyin": "yǒu le", "meaning": "~이 생기다", "span": { "start": 19, "end": 21 } },
+                { "id": "w_006_yiyi", "text": "意義", "pinyin": "yìyì", "meaning": "의미", "span": { "start": 21, "end": 23 } }
+              ],
+              "patterns": [
+                {
+                  "id": "p_youAyouB",
+                  "name": "有A有B",
+                  "meaning": "A도 있고 B도 있다",
+                  "koreanTip": "다양한 상태/감정을 함께 말할 때",
+                  "examples": ["有好有壞。", "有苦有甜。"],
+                  "anchors": [
+                    { "label": "병렬", "index": 0, "span": { "start": 8, "end": 12 } }
+                  ]
+                }
+              ]
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 甜蜜又安心 那種感覺就是你",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, tiánmì yòu ānxīn, nà zhǒng gǎnjué jiùshì nǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 달콤하고 마음이 놓여. 그런 느낌이 바로 너야.",
+              "words": [
+                { "id": "w_007_tianmi", "text": "甜蜜", "pinyin": "tiánmì", "meaning": "달콤하다", "span": { "start": 8, "end": 10 } },
+                { "id": "w_007_anxin", "text": "安心", "pinyin": "ānxīn", "meaning": "마음이 놓이다", "span": { "start": 11, "end": 13 } },
+                { "id": "w_007_nazhong", "text": "那種", "pinyin": "nà zhǒng", "meaning": "그런", "span": { "start": 14, "end": 16 } },
+                { "id": "w_007_ganjue", "text": "感覺", "pinyin": "gǎnjué", "meaning": "느낌", "span": { "start": 16, "end": 18 } },
+                { "id": "w_007_jiushi", "text": "就是", "pinyin": "jiùshì", "meaning": "바로 ~다(강조)", "span": { "start": 18, "end": 20 } }
+              ],
+              "patterns": [
+                {
+                  "id": "p_you",
+                  "name": "又…又…",
+                  "meaning": "~도 하고 ~도 하다(둘 다)",
+                  "koreanTip": "두 가지 성질을 동시에",
+                  "examples": ["又累又餓。", "又開心又緊張。"],
+                  "anchors": [
+                    { "label": "병렬", "index": 0, "span": { "start": 10, "end": 11 } }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "lineLyrics": "我 一直都想對你說",
+              "linePinyin": "wǒ yìzhí dōu xiǎng duì nǐ shuō",
+              "translated": "나는 계속 너에게 말하고 싶었어.",
+              "words": [
+                { "id": "w_008_yizhi", "text": "一直", "pinyin": "yìzhí", "meaning": "줄곧, 계속", "span": { "start": 2, "end": 4 } },
+                { "id": "w_008_duini", "text": "對你", "pinyin": "duì nǐ", "meaning": "너에게", "span": { "start": 6, "end": 8 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "你給我想不到的快樂 像綠洲給了沙漠",
+              "linePinyin": "nǐ gěi wǒ xiǎng bù dào de kuàilè, xiàng lǜzhōu gěi le shāmò",
+              "translated": "너는 내가 상상도 못한 기쁨을 줬어, 마치 오아시스가 사막에 주는 것처럼.",
+              "words": [
+                { "id": "w_009_kuaile", "text": "快樂", "pinyin": "kuàilè", "meaning": "기쁨, 행복", "span": { "start": 7, "end": 9 } },
+                { "id": "w_009_lvzhou", "text": "綠洲", "pinyin": "lǜzhōu", "meaning": "오아시스", "span": { "start": 11, "end": 13 } },
+                { "id": "w_009_shamo", "text": "沙漠", "pinyin": "shāmò", "meaning": "사막", "span": { "start": 15, "end": 17 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "說 你會永遠陪著我",
+              "linePinyin": "shuō nǐ huì yǒngyuǎn péizhe wǒ",
+              "translated": "너는 영원히 내 곁에 있어주겠다고 말했지.",
+              "words": [
+                { "id": "w_010_yongyuan", "text": "永遠", "pinyin": "yǒngyuǎn", "meaning": "영원히", "span": { "start": 4, "end": 6 } },
+                { "id": "w_010_peizhe", "text": "陪著", "pinyin": "péizhe", "meaning": "곁에 함께하다", "span": { "start": 6, "end": 8 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "做我的根 我翅膀 讓我飛 也有回去的窩",
+              "linePinyin": "zuò wǒ de gēn, wǒ de chìbǎng, ràng wǒ fēi, yě yǒu huíqù de wō",
+              "translated": "내 뿌리가 되고, 내 날개가 되어줘. 내가 날게도 해주고, 돌아갈 보금자리도 있어.",
+              "words": [
+                { "id": "w_011_gen", "text": "根", "pinyin": "gēn", "meaning": "뿌리", "span": { "start": 3, "end": 4 } },
+                { "id": "w_011_chibang", "text": "翅膀", "pinyin": "chìbǎng", "meaning": "날개", "span": { "start": 6, "end": 8 } },
+                { "id": "w_011_wo", "text": "窩", "pinyin": "wō", "meaning": "보금자리", "span": { "start": 18, "end": 19 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "我願意 真的願意 付出所有 也要保護你",
+              "linePinyin": "wǒ yuànyì, zhēn de yuànyì, fùchū suǒyǒu, yě yào bǎohù nǐ",
+              "translated": "나는 기꺼이, 정말 기꺼이 모든 걸 내주고서라도 널 지킬 거야.",
+              "words": [
+                { "id": "w_012_yuanyi", "text": "願意", "pinyin": "yuànyì", "meaning": "기꺼이 ~하다", "span": { "start": 1, "end": 3 } },
+                { "id": "w_012_zhende", "text": "真的", "pinyin": "zhēn de", "meaning": "정말", "span": { "start": 4, "end": 6 } },
+                { "id": "w_012_suoyou", "text": "所有", "pinyin": "suǒyǒu", "meaning": "모든 것", "span": { "start": 11, "end": 13 } },
+                { "id": "w_012_baohu", "text": "保護", "pinyin": "bǎohù", "meaning": "보호하다", "span": { "start": 16, "end": 18 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "在一起 時間繼續流逝 請記得我有多麼的愛你",
+              "linePinyin": "zài yìqǐ, shíjiān jìxù liúshì, qǐng jìde wǒ yǒu duōme de ài nǐ",
+              "translated": "함께 있는 동안, 시간은 계속 흘러가. 내가 너를 얼마나 사랑하는지 기억해줘.",
+              "words": [
+                { "id": "w_013_zaiyiqi", "text": "在一起", "pinyin": "zài yìqǐ", "meaning": "함께", "span": { "start": 0, "end": 3 } },
+                { "id": "w_013_jixu", "text": "繼續", "pinyin": "jìxù", "meaning": "계속하다", "span": { "start": 6, "end": 8 } },
+                { "id": "w_013_liushi", "text": "流逝", "pinyin": "liúshì", "meaning": "흘러가다(시간)", "span": { "start": 8, "end": 10 } },
+                { "id": "w_013_jide", "text": "記得", "pinyin": "jìde", "meaning": "기억하다", "span": { "start": 12, "end": 14 } },
+                { "id": "w_013_duome", "text": "多麼", "pinyin": "duōme", "meaning": "얼마나", "span": { "start": 16, "end": 18 } },
+                { "id": "w_013_aini", "text": "愛你", "pinyin": "ài nǐ", "meaning": "너를 사랑하다", "span": { "start": 19, "end": 21 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 不棄不離 不在意 一路有多少風雨",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, bú qì bù lí, bù zàiyì, yílù yǒu duōshǎo fēngyǔ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 버리지도 떠나지도 않고, 신경 쓰지 않아. 가는 길에 비바람이 얼마나 있어도.",
+              "words": [
+                { "id": "w_014_buqibuli", "text": "不棄不離", "pinyin": "bú qì bù lí", "meaning": "버리지도 떠나지도 않다", "span": { "start": 8, "end": 12 } },
+                { "id": "w_014_buzaiyi", "text": "不在意", "pinyin": "bù zàiyì", "meaning": "신경 쓰지 않다", "span": { "start": 13, "end": 16 } },
+                { "id": "w_014_yilu", "text": "一路", "pinyin": "yílù", "meaning": "줄곧, 가는 길 내내", "span": { "start": 17, "end": 19 } },
+                { "id": "w_014_fengyu", "text": "風雨", "pinyin": "fēngyǔ", "meaning": "비바람(시련의 비유)", "span": { "start": 22, "end": 24 } }
+              ],
+              "patterns": [
+                {
+                  "id": "p_buA_buB",
+                  "name": "不A不B",
+                  "meaning": "A도 안 하고 B도 안 하다(둘 다 부정)",
+                  "koreanTip": "강한 결심/상태 표현",
+                  "examples": ["不哭不鬧。", "不急不慢。"],
+                  "anchors": [
+                    { "label": "부정 병렬", "index": 0, "span": { "start": 8, "end": 12 } }
+                  ]
+                }
+              ]
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 放在你手心 燦爛的幸福全給你",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, fàng zài nǐ shǒuxīn, cànlàn de xìngfú quán gěi nǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 네 손안에 올려두고, 찬란한 행복을 전부 너에게 줄게.",
+              "words": [
+                { "id": "w_015_fangzai", "text": "放在", "pinyin": "fàng zài", "meaning": "~에 두다", "span": { "start": 8, "end": 10 } },
+                { "id": "w_015_shouxin", "text": "手心", "pinyin": "shǒuxīn", "meaning": "손바닥", "span": { "start": 11, "end": 13 } },
+                { "id": "w_015_canlan", "text": "燦爛", "pinyin": "cànlàn", "meaning": "찬란하다", "span": { "start": 14, "end": 16 } },
+                { "id": "w_015_xingfu", "text": "幸福", "pinyin": "xìngfú", "meaning": "행복", "span": { "start": 17, "end": 19 } },
+                { "id": "w_015_geini", "text": "給你", "pinyin": "gěi nǐ", "meaning": "너에게 주다", "span": { "start": 20, "end": 22 } }
+              ],
+              "patterns": []
+            },
+
+            {
+              "lineLyrics": "就是愛你愛著你 不棄不離 不在意 一路有多少風雨",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, bú qì bù lí, bù zàiyì, yílù yǒu duōshǎo fēngyǔ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 버리지도 떠나지도 않고, 신경 쓰지 않아. 가는 길에 비바람이 얼마나 있어도.",
+              "words": [
+                { "id": "w_016_buqibuli", "text": "不棄不離", "pinyin": "bú qì bù lí", "meaning": "버리지도 떠나지도 않다", "span": { "start": 8, "end": 12 } },
+                { "id": "w_016_buzaiyi", "text": "不在意", "pinyin": "bù zàiyì", "meaning": "신경 쓰지 않다", "span": { "start": 13, "end": 16 } },
+                { "id": "w_016_fengyu", "text": "風雨", "pinyin": "fēngyǔ", "meaning": "비바람(시련)", "span": { "start": 22, "end": 24 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 放在你手心 燦爛的幸福全給你",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, fàng zài nǐ shǒuxīn, cànlàn de xìngfú quán gěi nǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 네 손안에 올려두고, 찬란한 행복을 전부 너에게 줄게.",
+              "words": [
+                { "id": "w_017_shouxin", "text": "手心", "pinyin": "shǒuxīn", "meaning": "손바닥", "span": { "start": 11, "end": 13 } },
+                { "id": "w_017_xingfu", "text": "幸福", "pinyin": "xìngfú", "meaning": "행복", "span": { "start": 17, "end": 19 } },
+                { "id": "w_017_geini", "text": "給你", "pinyin": "gěi nǐ", "meaning": "너에게 주다", "span": { "start": 20, "end": 22 } }
+              ],
+              "patterns": []
+            },
+
+            {
+              "lineLyrics": "就是愛你愛著你 我都願意",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, wǒ dōu yuànyì",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 난 다 기꺼이 할게.",
+              "words": [
+                { "id": "w_018_wodou", "text": "我都", "pinyin": "wǒ dōu", "meaning": "나는 전부/다", "span": { "start": 8, "end": 10 } },
+                { "id": "w_018_yuanyi", "text": "願意", "pinyin": "yuànyì", "meaning": "기꺼이 ~하다", "span": { "start": 10, "end": 12 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 要我們在一起",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, yào wǒmen zài yìqǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 우리 함께하자.",
+              "words": [
+                { "id": "w_019_yao", "text": "要", "pinyin": "yào", "meaning": "~하길 원하다/해야 한다", "span": { "start": 8, "end": 9 } },
+                { "id": "w_019_women", "text": "我們", "pinyin": "wǒmen", "meaning": "우리", "span": { "start": 9, "end": 11 } },
+                { "id": "w_019_zaiyiqi", "text": "在一起", "pinyin": "zài yìqǐ", "meaning": "함께", "span": { "start": 11, "end": 14 } }
+              ],
+              "patterns": []
+            },
+
+            {
+              "lineLyrics": "就是愛你愛著你 我都願意",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, wǒ dōu yuànyì",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 난 다 기꺼이 할게.",
+              "words": [
+                { "id": "w_020_yuanyi", "text": "願意", "pinyin": "yuànyì", "meaning": "기꺼이 ~하다", "span": { "start": 10, "end": 12 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 要我們在一起",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, yào wǒmen zài yìqǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 우리 함께하자.",
+              "words": [
+                { "id": "w_021_zaiyiqi", "text": "在一起", "pinyin": "zài yìqǐ", "meaning": "함께", "span": { "start": 11, "end": 14 } }
+              ],
+              "patterns": []
+            },
+
+            {
+              "lineLyrics": "就是愛你愛著你 我都願意",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, wǒ dōu yuànyì",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 난 다 기꺼이 할게.",
+              "words": [
+                { "id": "w_022_dou", "text": "都", "pinyin": "dōu", "meaning": "모두, 다", "span": { "start": 9, "end": 10 } }
+              ],
+              "patterns": []
+            },
+            {
+              "lineLyrics": "就是愛你愛著你 要我們在一起",
+              "linePinyin": "jiùshì ài nǐ ài zhe nǐ, yào wǒmen zài yìqǐ",
+              "translated": "그게 바로 너를 사랑하고 또 사랑하는 거야. 우리 함께하자.",
+              "words": [
+                { "id": "w_023_yao", "text": "要", "pinyin": "yào", "meaning": "~하길 원하다/해야 한다", "span": { "start": 8, "end": 9 } }
+              ],
+              "patterns": []
+            }
+          ]
+        }
   ]
 }

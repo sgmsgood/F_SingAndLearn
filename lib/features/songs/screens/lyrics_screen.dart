@@ -113,7 +113,13 @@ class _LyricCellInlineChips extends StatelessWidget {
               ],
             ),
 
-            // 번역
+            if (line.linePinyin.trim().isNotEmpty) ...[
+              const SizedBox(height: 10),
+              Text(
+                line.linePinyin,
+                style: TextStyle(fontSize: 15, color: subColor),
+              ),
+            ],
             if (line.translated.trim().isNotEmpty) ...[
               const SizedBox(height: 10),
               Text(
@@ -154,8 +160,8 @@ class _InlineChipRichText extends StatelessWidget {
       ...words.map((w) => _TokenSpan(
         id: w.id,
         label: w.text,
-        start: w.span?.start,
-        end: w.span?.end,
+        start: w.span.start,
+        end: w.span.end,
       )),
       ...(patterns ?? []).mapIndexed((i, p) => _TokenSpan(
         id: p.id,
