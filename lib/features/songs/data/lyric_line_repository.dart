@@ -14,31 +14,31 @@ class LyricLineRepository {
 
   Future<List<LyricsLine>> fetchLinesBySongId(String songId) async {
     print("@!!-->> songId:::: $songId");
-    // final response = await _supabase
-    //     .from('lyric_lines')
-    //     .select()
-    //     .eq('song_id', songId);
 
     final response = await _supabase
         .from('lyric_lines')
         .select('''
-          *,
-          line_word_occurrences (
-            id,
-            span_start,
-            span_end,
-            line_words (
-              id,
-              text,
-              pinyin,
-              meaning,
-              level
-            )
+        id, 
+        line_lyrics, 
+        translation, 
+        line_pinyin,
+        line_word_occurrences (
+          id, 
+          line_id, 
+          word_id, 
+          is_important, 
+          start_span, 
+          end_span,
+          line_words (
+            text, 
+            pinyin, 
+            meaning
           )
-        ''')
-        .eq('song_id', songId);
+        )
+      ''')
+        .eq('song_id', songId)
+        .order('line_index', ascending: true);
 
-    print("@!!-->>LyricsLine response: ${response}");
-    return response.map((e) => LyricsLine.fromSupabase(e)).toList();
+    return (response as List).map((data) => LyricsLine.fromJson(data)).toList();
   }
 }

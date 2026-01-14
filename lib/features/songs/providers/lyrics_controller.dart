@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../models/lyrics/grammar_pattern.dart';
 import '../models/lyrics/lyric_word.dart'; // 파일명/클래스명 확인 (LyricsWord vs LyricWord)
 import '../models/lyrics/lyrics_line.dart';
 import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
@@ -31,17 +30,6 @@ class LyricsController extends _$LyricsController {
       return;
     } catch (_) {
       // 단어 리스트에 없으면 무시하고 다음 단계로 진행
-    }
-
-    // 3. '패턴(patterns)' 리스트에서 해당 ID를 찾아봅니다.
-    try {
-      final pattern = line.patterns.firstWhere((element) => element.id == id);
-
-      // 찾았다면 패턴 바텀시트를 띄우고 종료
-      _showPatternSheet(context, pattern: pattern);
-      return;
-    } catch (_) {
-      // 패턴 리스트에도 없으면 무시
     }
 
     // 4. 둘 다 없으면 디버그 로그 출력 (데이터 정합성 문제)
@@ -87,46 +75,6 @@ class LyricsController extends _$LyricsController {
                 word.meaning,
                 style: const TextStyle(fontSize: 18),
               ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-
-  Future<void> _showPatternSheet(
-      BuildContext context, {
-        required GrammarPattern pattern,
-      }) {
-    return showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-      ),
-      builder: (context) {
-        return Padding(
-          padding: EdgeInsets.only(
-            left: 16,
-            right: 16,
-            top: 10,
-            bottom: 30 + MediaQuery.of(context).viewInsets.bottom,
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // // GrammarPattern 모델 필드명에 맞춰 수정하세요 (예: pattern vs name)
-              // Text(
-              //   pattern.pattern, // 혹은 pattern.name
-              //   style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-              // ),
-              // const SizedBox(height: 12),
-              // Text(
-              //   pattern.explanation, // 혹은 pattern.meaning
-              //   style: const TextStyle(fontSize: 16),
-              // ),
             ],
           ),
         );
