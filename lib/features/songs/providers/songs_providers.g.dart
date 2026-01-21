@@ -150,3 +150,47 @@ abstract class _$FetchFavoriteSongList extends $AsyncNotifier<List<Song>> {
     element.handleCreate(ref, build);
   }
 }
+
+@ProviderFor(FavoriteToggler)
+final favoriteTogglerProvider = FavoriteTogglerProvider._();
+
+final class FavoriteTogglerProvider
+    extends $AsyncNotifierProvider<FavoriteToggler, void> {
+  FavoriteTogglerProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'favoriteTogglerProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$favoriteTogglerHash();
+
+  @$internal
+  @override
+  FavoriteToggler create() => FavoriteToggler();
+}
+
+String _$favoriteTogglerHash() => r'24543ef246425526403c9bb1a8cd1da99875cbbb';
+
+abstract class _$FavoriteToggler extends $AsyncNotifier<void> {
+  FutureOr<void> build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final ref = this.ref as $Ref<AsyncValue<void>, void>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<AsyncValue<void>, void>,
+              AsyncValue<void>,
+              Object?,
+              Object?
+            >;
+    element.handleCreate(ref, build);
+  }
+}

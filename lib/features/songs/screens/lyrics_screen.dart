@@ -21,7 +21,6 @@ class LyricsScreen extends ConsumerStatefulWidget {
 class _LyricsScreenState extends ConsumerState<LyricsScreen> with RouteAware {
   // 단어 클릭 시 하단 시트를 보여주는 함수
   void _showWordDetail(BuildContext context, LyricsWord word) {
-    print("@!!-->> word:::: $word");
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.white,

@@ -4,7 +4,10 @@ class AuthRepository {
   final supabase = Supabase.instance.client;
 
   Future<void> loginWithGoogle() async {
-    await supabase.auth.signInWithOAuth(OAuthProvider.google);
+    await supabase.auth.signInWithOAuth(
+      OAuthProvider.google,
+      // authScreenLaunchMode:LaunchMode.platformDefault
+    );
   }
 
   Future<void> logout() async {

@@ -1,3 +1,4 @@
+import 'package:f_sing_and_learn/features/user/auth/screens/login_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:f_sing_and_learn/features/home/screens/home_screen.dart';
 import 'package:f_sing_and_learn/features/songs/models/song.dart';
@@ -22,6 +23,14 @@ final router = GoRouter(
           builder: (context, state) {
             final song = state.extra as Song;
             return LyricsScreen(song: song);
+          },
+        ),
+        GoRoute(
+          path: 'login',
+          name: AppRoute.login.name,
+          builder: (context, state) {
+            // final song = state.extra as Song;
+            return LoginScreen();
           },
         ),
       ],

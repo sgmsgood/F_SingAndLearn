@@ -16,4 +16,20 @@ class SongRepository {
     print("@!!-->> response: ${response}");
     return response.map((e) => Song.fromJson(e)).toList();
   }
+
+  // [추가] 즐겨찾기 추가
+  Future<void> addFavorite(String songId, String userId) async {
+    await _supabase.from('favorite_songs').insert({
+      'song_id': songId,
+      'user_id': userId,
+    });
+  }
+
+  // [추가] 즐겨찾기 삭제
+  Future<void> removeFavorite(String songId, String userId) async {
+    await _supabase
+        .from('favorite_songs')
+        .delete()
+        .match({'song_id': songId, 'user_id': userId});
+  }
 }
