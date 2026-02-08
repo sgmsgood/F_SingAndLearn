@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../models/lyrics/lyric_word.dart'; // 파일명/클래스명 확인 (LyricsWord vs LyricWord)
 import '../models/lyrics/lyrics_line.dart';
-import 'package:f_sing_and_learn/features/songs/providers/lyrics_selection_provider.dart';
+import 'package:mumu/features/songs/providers/lyrics_selection_provider.dart';
 
 part 'lyrics_controller.g.dart';
 

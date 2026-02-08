@@ -6,9 +6,9 @@ class FavoriteIconButton extends StatelessWidget {
     super.key,
     required this.isFavorite,
     required this.onChanged,
-    this.size = 32,
-    this.activeColor = const Color(0xFFFFC107), // amber-ish
-    this.inactiveColor = const Color(0xFFB0B0B0),
+    this.size = 24,
+    this.activeColor = Colors.red, // amber-ish
+    this.inactiveColor = Colors.grey,
     this.splashRadius = 32,
     this.tooltip = '즐겨찾기',
   });
@@ -35,7 +35,7 @@ class FavoriteIconButton extends StatelessWidget {
         transitionBuilder: (child, anim) =>
             ScaleTransition(scale: anim, child: child),
         child: Icon(
-          isFavorite ? Icons.star_rounded : Icons.star_border_rounded,
+          isFavorite ? Icons.favorite : Icons.favorite_border,
           key: ValueKey(isFavorite),
           size: size,
           color: isFavorite ? activeColor : inactiveColor,

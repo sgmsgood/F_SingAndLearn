@@ -1,10 +1,6 @@
-import 'dart:convert';
 
-import 'package:f_sing_and_learn/features/songs/models/lyrics/lyrics_line.dart';
-import 'package:flutter/services.dart';
+import 'package:mumu/features/songs/models/lyrics/lyrics_line.dart';
 import 'package:supabase/supabase.dart';
-import '../models/song.dart';
-import '../models/song_bundle.dart';
 
 
 class LyricLineRepository {
@@ -37,7 +33,7 @@ class LyricLineRepository {
         )
       ''')
         .eq('song_id', songId)
-        .order('line_index', ascending: true);
+        .order('play_timestamp', ascending: true);
 
     return (response as List).map((data) => LyricsLine.fromJson(data)).toList();
   }

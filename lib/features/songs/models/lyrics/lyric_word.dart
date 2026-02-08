@@ -1,4 +1,3 @@
-import 'package:f_sing_and_learn/features/songs/models/lyrics/span.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'lyric_word.freezed.dart';

@@ -1,5 +1,5 @@
 
-import 'package:f_sing_and_learn/features/user/auth/login_state.dart' show LoginState;
+import 'package:mumu/features/user/auth/login_state.dart' show LoginState;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 

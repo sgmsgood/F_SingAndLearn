@@ -1,9 +1,10 @@
 // features/auth/providers/auth_provider.dart
 
 import 'dart:async';
-import 'package:flutter/material.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import '../../../songs/providers/songs_providers.dart';
 
 part 'auth_provider.g.dart';
 
@@ -13,36 +14,76 @@ class Auth extends _$Auth {
 
   @override
   User? build() {
-    // Supabase의 로그인 상태 변경을 감지하여 상태를 업데이트합니다.
-    _supabase.auth.onAuthStateChange.listen((data) {
-      state = data.session?.user;
-    });
-    // 초기 상태는 현재 로그인된 사용자 정보입니다.
-    return _supabase.auth.currentUser;
+    // 1. 상태 변화를 감시하는 전용 스트림 구독
+    final subscription = Supabase.instance.client.auth.onAuthStateChange.listen(
+      (data) {
+        final User? user = data.session?.user;
+
+        if (data.event == AuthChangeEvent.signedIn ||
+            data.event == AuthChangeEvent.signedOut) {
+          // 즐겨찾기 스트림과 곡 목록을 초기화하여 새로 읽어오게 함
+          ref.invalidate(favoriteIdsStreamProvider);
+
+          print("🔄 Auth Event (${data.event}): Data Providers Invalidated");
+        }
+
+        if (state?.id != user?.id) {
+          state = user;
+        }
+        // 로그인이 감지되면 즉시 state 업데이트
+      },
+    );
+
+    ref.onDispose(() => subscription.cancel());
+    return Supabase.instance.client.auth.currentUser;
   }
 
-  /// 현재 로그인된 사용자가 있는지 확인합니다.
-  bool isLoggedIn() {
-    return state != null;
-  }
-
-  /// 구글로 로그인
-  Future<void> signInWithGoogle(BuildContext context) async {
+  Future<void> signInWithGoogle() async {
     try {
       await _supabase.auth.signInWithOAuth(
         OAuthProvider.google,
-        // context: context,
+        redirectTo: 'sal://login-callback',
       );
     } catch (e) {
-      // 에러 처리 (예: 스낵바 표시)
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('로그인 중 에러가 발생했습니다: $e')),
-      );
+      rethrow;
     }
   }
 
-  /// 로그아웃
   Future<void> signOut() async {
     await _supabase.auth.signOut();
+  }
+
+  Future<void> deleteAccount() async {
+    try {
+      final session = _supabase.auth.currentSession;
+      if (session == null) {
+        throw Exception('로그인되지 않은 상태입니다.');
+      }
+
+      print('User ID: ${session.user.id}');
+      print('Access Token exists: ${session.accessToken.isNotEmpty}');
+
+      // 명시적으로 body에 빈 객체라도 전달
+      final response = await _supabase.functions.invoke(
+        'delete-user-account',
+        method: HttpMethod.post,
+        headers: {
+          'Authorization': 'Bearer ${session.accessToken}',
+        },
+        body: {}, // 빈 body 추가
+      );
+
+      print('Response status: ${response.status}');
+      print('Response data: ${response.data}');
+
+      if (response.status == 200) {
+        await signOut();
+      } else {
+        throw Exception('Failed: ${response.data}');
+      }
+    } catch (e) {
+      print('Error: $e');
+      rethrow;
+    }
   }
 }

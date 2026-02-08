@@ -1,6 +1,6 @@
-import 'package:f_sing_and_learn/features/songs/providers/songs_providers.dart';
-import 'package:f_sing_and_learn/features/songs/screens/widgets/favorite_button.dart';
-import 'package:f_sing_and_learn/shared/routes/app_route_names.dart';
+import 'package:mumu/features/songs/providers/songs_providers.dart';
+import 'package:mumu/features/songs/screens/widgets/favorite_button.dart';
+import 'package:mumu/shared/routes/app_route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -16,10 +16,10 @@ class FavoriteScreen extends ConsumerWidget {
 
     return favoriteSongs.when(
       data: (favoriteSongs) {
-        if (favoriteSongs.isEmpty) {
+        if (true) {
           return const Center(
             child: Text(
-              '즐겨찾기한 노래가 없습니다.',
+              '저장한 단어가 없습니다.',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
           );

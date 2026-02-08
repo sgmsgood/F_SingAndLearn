@@ -1,4 +1,3 @@
-import 'package:f_sing_and_learn/features/songs/models/lyrics/span.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'lyric_word.dart'; // 이 파일 안에 클래스명이 LyricsWord 인지 확인 필요
 

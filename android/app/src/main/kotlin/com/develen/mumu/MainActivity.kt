@@ -1,4 +1,4 @@
-package com.example.f_sing_and_learn
+package com.develen.mumu
 
 import io.flutter.embedding.android.FlutterActivity
 

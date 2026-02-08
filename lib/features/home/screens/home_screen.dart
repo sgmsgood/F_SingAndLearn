@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../favorites/screens/favorite_screen.dart';
 import '../../songs/screens/song_list_screen.dart';
-import '../../study/presentation/study_screen.dart';
+import '../../study/presentation/my_info_screen.dart';
 // 아래 임포트 경로는 사용자님의 프로젝트 구조에 맞게 유지하세요.
-// import 'package:f_sing_and_learn/features/favorites/screens/favorite_screen.dart';
-// import 'package:f_sing_and_learn/features/songs/screens/song_list_screen.dart';
-// import 'package:f_sing_and_learn/features/study/presentation/study_screen.dart';
+// import 'package:mumu/features/favorites/screens/favorite_screen.dart';
+// import 'package:mumu/features/songs/screens/song_list_screen.dart';
+// import 'package:mumu/features/study/presentation/my_info_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -23,7 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   final List<Widget> _pages = const [
     SongListScreen(),
     FavoriteScreen(),
-    StudyScreen(),
+    MyInfoPage(),
   ];
 
   @override
@@ -31,7 +31,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        backgroundColor: Colors.white, // 전체 배경을 깔끔하게 화이트로 설정
+        // backgroundColor: Colors.white,
         body: SafeArea(
           bottom: false, // 하단 바와의 간격을 위해 아래쪽은 false
           child: IndexedStack(

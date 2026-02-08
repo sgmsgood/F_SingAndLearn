@@ -3,4 +3,5 @@ enum AppRoute {
   home,
   songList,
   lyrics,
+  editProfile
 }
