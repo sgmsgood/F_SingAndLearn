@@ -12,7 +12,7 @@ abstract class Song with _$Song {
     required String singer,
     @JsonKey(name: 'pinyin_title') @Default('') String pinyinTitle,
     @JsonKey(name: 'nickname') @Default('') String nickname,
-    @Default('') String youtubeLink,
+    @Default('') @JsonKey(name: 'youtube_link') String youtubeLink,
     @JsonKey(name: 'is_favorite') @Default(false) bool isFavorite,
   }) = _Song;
 

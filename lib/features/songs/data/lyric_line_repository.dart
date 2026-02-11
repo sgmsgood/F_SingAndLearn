@@ -18,6 +18,7 @@ class LyricLineRepository {
         line_lyrics, 
         translation, 
         line_pinyin,
+        play_timestamp,
         line_word_occurrences (
           id, 
           line_id, 

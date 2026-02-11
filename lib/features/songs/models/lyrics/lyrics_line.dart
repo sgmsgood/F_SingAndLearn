@@ -12,6 +12,7 @@ abstract class LyricsLine with _$LyricsLine {
     @Default('') String translation,
     @JsonKey(name: 'line_pinyin') @Default('') String pinyin,
     @Default([]) List<LyricsWord> words,
+    @Default(0) int playTimestamp,
   }) = _LyricsLine;
 
   factory LyricsLine.fromJson(Map<String, dynamic> json) {
@@ -23,6 +24,7 @@ abstract class LyricsLine with _$LyricsLine {
       lineLyrics: json['line_lyrics'] ?? '',
       translation: json['translation'] ?? '',
       pinyin: json['line_pinyin'] ?? '',
+      playTimestamp: json['play_timestamp'] ?? 0,
       words: occurrencesList.map((occ) => LyricsWord.fromJson(occ)).toList(),
     );
   }
