@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class EditProfileScreen extends StatelessWidget {
   const EditProfileScreen({super.key});
@@ -7,60 +8,62 @@ class EditProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('프로필 수정'),
+        title: Text(
+          '프로필 수정',
+          style: TextStyle(fontSize: 18.sp),
+        ),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
       body: Padding(
-        padding: EdgeInsetsGeometry.symmetric(vertical: 32, horizontal: 16),
+        padding: EdgeInsets.symmetric(vertical: 32.h, horizontal: 16.w),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
-                const TextField(decoration: InputDecoration(labelText: '닉네임')),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: '닉네임',
+                    labelStyle: TextStyle(fontSize: 14.sp),
+                  ),
+                ),
                 const Divider(),
               ],
             ),
-
-            // const SizedBox(height: 400),
-            // ListTile(
-            //   contentPadding: EdgeInsets.zero,
-            //   title: const Text(
-            //     '회원 탈퇴',
-            //     style: TextStyle(color: Colors.redAccent, fontSize: 14),
-            //   ),
-            //   trailing: const Icon(Icons.chevron_right, size: 20),
-            //   onTap: () => _showDeleteAccountDialog(context),
-            // ),
           ],
         ),
       ),
     );
   }
 
-  // 탈퇴 확인 다이얼로그 (중요!)
   void _showDeleteAccountDialog(BuildContext context) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('정말 떠나시나요?'),
-        content: const Text(
+        title: Text(
+          '정말 떠나시나요?',
+          style: TextStyle(fontSize: 16.sp),
+        ),
+        content: Text(
           '회원 탈퇴 시 지금까지 학습한 중국어 노래 데이터와 단어장 정보가 모두 사라지며 복구할 수 없습니다.',
+          style: TextStyle(fontSize: 14.sp),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('취소'),
+            child: Text('취소', style: TextStyle(fontSize: 14.sp)),
           ),
           TextButton(
             onPressed: () {
-              // TODO: Supabase 계정 삭제 로직 연결
               Navigator.pop(context);
             },
-            child: const Text('탈퇴하기', style: TextStyle(color: Colors.red)),
+            child: Text(
+              '탈퇴하기',
+              style: TextStyle(color: Colors.red, fontSize: 14.sp),
+            ),
           ),
         ],
       ),

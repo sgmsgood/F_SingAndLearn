@@ -18,19 +18,15 @@ class LoginScreen extends ConsumerWidget {
         children: [
           SupaSocialsAuth(
             socialProviders: [
-              // OAuthProvider.apple,
               OAuthProvider.google,
             ],
             colored: true,
-            redirectUrl:'sal://login-callback',
+            redirectUrl: 'sal://login-callback',
             onSuccess: (Session response) {
-              // do something, for example: navigate('home');
               print("@!!-->> response:: $response");
               context.pushNamed(AppRoute.home.name);
             },
-            onError: (error) {
-              // do something, for example: navigate("wait_for_email");
-            },
+            onError: (error) {},
           ),
         ],
       ),

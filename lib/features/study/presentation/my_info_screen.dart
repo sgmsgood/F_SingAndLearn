@@ -1,6 +1,7 @@
 import 'package:mumu/shared/routes/app_route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -17,22 +18,25 @@ class MyInfoPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('내 정보', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text(
+          '내 정보',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp),
+        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(20.r),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
                 _buildProfileCard(context, user),
-                const SizedBox(height: 30),
+                SizedBox(height: 30.h),
                 _buildMenuSection(context, ref, user),
-                const SizedBox(height: 40),
+                SizedBox(height: 40.h),
               ],
             ),
             if (user != null)
@@ -44,15 +48,18 @@ class MyInfoPage extends ConsumerWidget {
                       '회원탈퇴',
                       style: TextStyle(
                         color: Colors.grey.shade400,
-                        fontSize: 13,
+                        fontSize: 13.sp,
                         decoration: TextDecoration.underline,
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10.h),
                 ],
               ),
-            Text('버전 1.0.0', style: TextStyle(color: Colors.grey.shade500, fontSize: 12)),
+            Text(
+              '버전 1.0.0',
+              style: TextStyle(color: Colors.grey.shade500, fontSize: 12.sp),
+            ),
           ],
         ),
       ),
@@ -66,36 +73,41 @@ class MyInfoPage extends ConsumerWidget {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.all(24.r),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: lightPurple, width: 1.5),
+        borderRadius: BorderRadius.circular(24.r),
+        border: Border.all(color: lightPurple, width: 1.5.r),
       ),
       child: Column(
         children: [
           CircleAvatar(
-            radius: 40,
+            radius: 40.r,
             backgroundColor: lightPurple,
             backgroundImage: avatarUrl != null ? NetworkImage(avatarUrl) : null,
-            child: avatarUrl == null ? const Icon(Icons.person, size: 50, color: Colors.white) : null,
+            child: avatarUrl == null
+                ? Icon(Icons.person, size: 50.sp, color: Colors.white)
+                : null,
           ),
-          const SizedBox(height: 16),
-          Text(nickname, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-          const SizedBox(height: 4),
+          SizedBox(height: 16.h),
+          Text(
+            nickname,
+            style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
+          ),
+          SizedBox(height: 4.h),
           Text(
             email,
-            style: const TextStyle(color: Colors.black54, fontSize: 14),
+            style: TextStyle(color: Colors.black54, fontSize: 14.sp),
           ),
-          const SizedBox(height: 16),
-          // OutlinedButton(
-          //   onPressed: () => context.pushNamed(AppRoute.editProfile.name),
-          //   style: OutlinedButton.styleFrom(
-          //     foregroundColor: Colors.purple,
-          //     side: const BorderSide(color: lightPink),
-          //     shape: const StadiumBorder(),
-          //   ),
-          //   child: const Text('프로필 수정'),
-          // ),
+          SizedBox(height: 16.h),
+          OutlinedButton(
+            onPressed: () => context.pushNamed(AppRoute.editProfile.name),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: Colors.purple,
+              side: const BorderSide(color: lightPurple),
+              shape: const StadiumBorder(),
+            ),
+            child: Text('프로필 수정', style: TextStyle(fontSize: 14.sp)),
+          ),
         ],
       ),
     );
@@ -107,9 +119,13 @@ class MyInfoPage extends ConsumerWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.r),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 5)),
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10.r,
+            offset: Offset(0, 5.h),
+          ),
         ],
       ),
       child: Column(
@@ -117,9 +133,16 @@ class MyInfoPage extends ConsumerWidget {
           _buildMenuItem(
             icon: Icons.privacy_tip_outlined,
             title: '개인정보 처리방침',
-            onTap: () => launchUrl(Uri.parse('https://elen19900219.notion.site/MuMu-2fc17494a91680c39107ccf31087da09?source=copy_link')),
+            onTap: () => launchUrl(Uri.parse(
+              'https://elen19900219.notion.site/MuMu-2fc17494a91680c39107ccf31087da09?source=copy_link',
+            )),
           ),
-          Divider(height: 1, color: Colors.grey.shade100, indent: 20, endIndent: 20),
+          Divider(
+            height: 1.h,
+            color: Colors.grey.shade100,
+            indent: 20.w,
+            endIndent: 20.w,
+          ),
           if (isLoggedIn)
             _buildMenuItem(
               icon: Icons.logout,
@@ -146,10 +169,14 @@ class MyInfoPage extends ConsumerWidget {
     Color textColor = Colors.black87,
   }) {
     return ListTile(
-      leading: Icon(icon, color: lightPurple),
-      title: Text(title, style: TextStyle(color: textColor, fontWeight: FontWeight.w500)),
-      trailing: const Icon(Icons.chevron_right, color: Colors.grey),
+      leading: Icon(icon, color: lightPurple, size: 24.sp),
+      title: Text(
+        title,
+        style: TextStyle(color: textColor, fontWeight: FontWeight.w500, fontSize: 15.sp),
+      ),
+      trailing: Icon(Icons.chevron_right, color: Colors.grey, size: 22.sp),
       onTap: onTap,
+      contentPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 2.h),
     );
   }
 
@@ -157,10 +184,13 @@ class MyInfoPage extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('로그아웃'),
-        content: const Text('정말 로그아웃 하시겠습니까?'),
+        title: Text('로그아웃', style: TextStyle(fontSize: 16.sp)),
+        content: Text('정말 로그아웃 하시겠습니까?', style: TextStyle(fontSize: 14.sp)),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('취소')),
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('취소', style: TextStyle(fontSize: 14.sp)),
+          ),
           TextButton(
             onPressed: () async {
               await ref.read(authProvider.notifier).signOut();
@@ -169,7 +199,7 @@ class MyInfoPage extends ConsumerWidget {
                 context.goNamed(AppRoute.home.name);
               }
             },
-            child: const Text('확인', style: TextStyle(color: Colors.red)),
+            child: Text('확인', style: TextStyle(color: Colors.red, fontSize: 14.sp)),
           ),
         ],
       ),
@@ -180,10 +210,16 @@ class MyInfoPage extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('회원탈퇴'),
-        content: const Text('정말 탈퇴하시겠습니까? 모든 정보가 삭제되며, 복구할 수 없습니다.'),
+        title: Text('회원탈퇴', style: TextStyle(fontSize: 16.sp)),
+        content: Text(
+          '정말 탈퇴하시겠습니까? 모든 정보가 삭제되며, 복구할 수 없습니다.',
+          style: TextStyle(fontSize: 14.sp),
+        ),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('취소')),
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('취소', style: TextStyle(fontSize: 14.sp)),
+          ),
           TextButton(
             onPressed: () async {
               await ref.read(authProvider.notifier).deleteAccount();
@@ -192,7 +228,7 @@ class MyInfoPage extends ConsumerWidget {
                 context.goNamed(AppRoute.home.name);
               }
             },
-            child: const Text('탈퇴', style: TextStyle(color: Colors.red)),
+            child: Text('탈퇴', style: TextStyle(color: Colors.red, fontSize: 14.sp)),
           ),
         ],
       ),
