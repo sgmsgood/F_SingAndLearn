@@ -43,15 +43,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.queue_music, size: 24.sp),
+              icon: Image.asset('assets/icons/tab/ic_listen.png', width: 24.sp, height: 24.sp, color: _currentIndex == 0 ? Colors.purple.shade700 : Colors.grey.shade600),
               label: '곡 목록',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.school, size: 24.sp),
+              icon: Image.asset('assets/icons/tab/ic_study.png', width: 24.sp, height: 24.sp, color: _currentIndex == 1 ? Colors.purple.shade700 : Colors.grey.shade600),
               label: '공부하기',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person, size: 24.sp),
+              icon: Image.asset('assets/icons/tab/ic_profile.png', width: 24.sp, height: 24.sp, color: _currentIndex == 2 ? Colors.purple.shade700 : Colors.grey.shade600),
               label: '내 정보',
             ),
           ],
