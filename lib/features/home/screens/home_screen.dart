@@ -18,7 +18,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   final List<Widget> _pages = const [
     SongListScreen(),
-    FavoriteScreen(),
+    UserVocaScreen(),
     MyInfoPage(),
   ];
 

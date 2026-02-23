@@ -43,16 +43,16 @@ class YoutubePlayerSection extends StatelessWidget {
             secondChild: const SizedBox.shrink(),
           ),
         ),
-        if (visible) ...[
-          SizedBox(height: 16.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.w),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [_buildLoopButton()],
-            ),
-          ),
-        ],
+        // if (visible) ...[
+        //   SizedBox(height: 16.h),
+        //   Padding(
+        //     padding: EdgeInsets.symmetric(horizontal: 20.w),
+        //     child: Row(
+        //       mainAxisAlignment: MainAxisAlignment.end,
+        //       children: [_buildLoopButton()],
+        //     ),
+        //   ),
+        // ],
       ],
     );
   }
