@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../songs/providers/save_voca_providers.dart';
 import '../data/user_voca_repository.dart';
 import '../domain/voca_status.dart';
 import '../models/user_voca.dart';
@@ -57,7 +58,12 @@ class UserVocaActions {
   Future<void> remove(String wordId) async {
     final repo = _ref.read(userVocaRepositoryProvider);
     await repo.remove(wordId: wordId);
+    
+    // ✅ 1. 내 단어장 목록 새로고침
     _ref.invalidate(fetchUserVocaListProvider);
+    
+    // ✅ 2. 가사 화면의 책갈피 상태(Set<wordId>)도 함께 새로고침하여 아이콘 업데이트
+    _ref.invalidate(savedVocaProvider);
   }
 
   Future<void> toggleStatus(UserVocaItem item) async {
